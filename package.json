@@ -1,0 +1,17 @@
+{
+  "name": "onetautomation",
+  "version": "1.0.0",
+  "description": "onetAutomation",
+  "main": "index.js",
+  "scripts": {
+    "convertEmails": "node ./src/model/parseCredentials.js",
+    "turnOffFirewall": "node ./src/model/turnOffFirewall.js"
+  },
+  "dependencies": {
+    "puppeteer": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KovylinDenis/onetAutomation.git"
+  }
+}
