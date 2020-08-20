@@ -12,6 +12,7 @@ const DATABASE_FILE = path.resolve('src', 'database', 'database.json')
 const main = async () => {
   const rawData = await readAllFilesAsync(`${RAW_CREDENTIALS}${path.sep}`)
   const database = JSON.parse(await readFileAsync(DATABASE_FILE))
+  let credentialsCount = 0
 
   for (let i = 0; i < rawData.length; i++) {
     const normalized = normalizeText(rawData[i])
@@ -23,6 +24,7 @@ const main = async () => {
         (element) => element.email === singleCredentials[0]
       )
       if (found === undefined) {
+        credentialsCount++
         database.push({
           email: singleCredentials[0],
           password: singleCredentials[1]
@@ -33,7 +35,7 @@ const main = async () => {
 
   fs.writeFileSync(DATABASE_FILE, JSON.stringify(database, null, 2), () => {})
 
-  console.log('Credentials were migrated!')
+  console.log(`${credentialsCount} credentials were migrated!`)
 }
 
 ;(async () => {
