@@ -22,6 +22,7 @@ const normalizeText = function(text) {
     .replace(/\n/g, ' ')
     .replace(/ {2,}/g, ' ')
     .replace(/\u200B/g, '')
+    .replace(/\r/g, '')
     .trim()
 }
 

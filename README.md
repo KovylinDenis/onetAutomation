@@ -13,8 +13,8 @@
 
 - Open **onetAutomation** folder, you should see _raw_, _src_, _node_modules_ folders and a bunch of files.
 - Place text files with emails and passwords in _raw_ folder
-    - Note 1: format should be **email:password** separated by _space_, _tab_ or _new line_.
-    - Note 2: you can place folders with files instead, it will help you group all your accounts.
+  - Note 1: format should be **email:password** separated by _space_, _tab_ or _new line_.
+  - Note 2: you can place folders with files instead, it will help you group all your accounts.
 - Open **onetAutomation** folder in terminal
 - You need to convert raw data that you placed in _raw_ folder into script-readable format. To do that run next command:
   `npm run convertEmails`
