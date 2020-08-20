@@ -10,19 +10,19 @@ const main = async () => {
 
   for (let i = 0; i < database.length; i++) {
     if (!('firewall' in database[i]) || database[i].firewall !== 'off') {
-      console.log('Disabling firewall for:'+ database[i].email)
-      
+      console.log('Disabling firewall for:' + database[i].email)
+
       const browser = await puppeteer.launch({
         headless: false,
         defaultViewport: null,
         timeout: 30000
       })
-      
+
       try {
         const page = await browser.newPage()
         const loginPage = new LoginPage({page})
         const settingsPage = new SettingsPage({page})
-        
+
         await loginPage.doLogin({credentials: database[i]})
         if (database[i].imap !== 'on') {
           await settingsPage.enableIMAP()
@@ -33,7 +33,7 @@ const main = async () => {
         database[i].firewall = 'off'
       } catch (error) {
         console.log(`ERROR! User: ${database[i].email}\n${error}`)
-        database[i].firewall = "error: " + error
+        database[i].firewall = 'error: ' + error
       } finally {
         await browser.close()
       }
@@ -46,4 +46,6 @@ const main = async () => {
   console.log('Done!')
 }
 
-(async () => {await main()})()
+;(async () => {
+  await main()
+})()

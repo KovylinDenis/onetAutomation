@@ -1,10 +1,10 @@
 const fs = require('fs')
 const path = require('path')
-const {
-  readAllFilesAsync,
-  normalizeText,
-  readFileAsync
-} = require(path.resolve('src', 'model', 'utils'))
+const {readAllFilesAsync, normalizeText, readFileAsync} = require(path.resolve(
+  'src',
+  'model',
+  'utils'
+))
 
 const RAW_CREDENTIALS = path.resolve('raw')
 const DATABASE_FILE = path.resolve('src', 'database', 'database.json')
@@ -19,7 +19,9 @@ const main = async () => {
 
     for (let j = 0; j < credentialsArray.length; j++) {
       const singleCredentials = credentialsArray[j].split(':')
-      const found = database.find(element => element.email === singleCredentials[0])
+      const found = database.find(
+        (element) => element.email === singleCredentials[0]
+      )
       if (found === undefined) {
         database.push({
           email: singleCredentials[0],
@@ -30,8 +32,10 @@ const main = async () => {
   }
 
   fs.writeFileSync(DATABASE_FILE, JSON.stringify(database, null, 2), () => {})
-  
+
   console.log('Credentials were migrated!')
 }
 
-(async () => {await main()})()
+;(async () => {
+  await main()
+})()
