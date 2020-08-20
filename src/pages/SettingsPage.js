@@ -35,8 +35,6 @@ module.exports = class SettingsPage {
 
     if (status === this.switchStateOn) {
       await this.click(this.firewallSwitchCss)
-    } else {
-      console.log('Firewall already disabled for this user')
     }
 
     await this.page.reload()
@@ -52,8 +50,6 @@ module.exports = class SettingsPage {
 
     if (status === this.switchStateOff) {
       await this.click(this.IMAPSwitchCss)
-    } else {
-      console.log('IMAP already enabled for this user')
     }
 
     await this.page.reload()
