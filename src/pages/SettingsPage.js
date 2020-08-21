@@ -7,7 +7,7 @@ module.exports = class SettingsPage {
     this.switchStateOn = 'switchon2'
   }
 
-  async sleep (ms) {
+  async sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms))
   }
 
@@ -43,6 +43,7 @@ module.exports = class SettingsPage {
     if (status === this.switchStateOn) {
       await this.page.waitFor(this.firewallSwitchCss)
       await this.click(this.firewallSwitchCss)
+      console.log('   * Firewall switch clicked')
     }
 
     await this.page.reload()
@@ -63,6 +64,7 @@ module.exports = class SettingsPage {
     if (status === this.switchStateOff) {
       await this.page.waitFor(this.IMAPSwitchCss)
       await this.click(this.IMAPSwitchCss)
+      console.log('   * IMAP switch clicked')
     }
 
     await this.page.reload()

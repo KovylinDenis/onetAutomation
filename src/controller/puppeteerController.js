@@ -31,6 +31,8 @@ const disableFirewallForUser = async ({user}) => {
     const settingsPage = new SettingsPage({page})
 
     await loginPage.doLogin({credentials: user})
+    console.log('   * Login passed')
+
     if (user.imap !== 'on') {
       await settingsPage.enableIMAP()
       console.log('   * IMAP enabled')

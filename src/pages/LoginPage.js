@@ -8,7 +8,7 @@ module.exports = class LoginPage {
     this.loginButtonCss = 'input[class="loginButton"]'
   }
 
-  async sleep (ms) {
+  async sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms))
   }
 
@@ -36,6 +36,5 @@ module.exports = class LoginPage {
     await this.page.waitFor(this.loginButtonCss)
     await this.click(this.loginButtonCss)
     await this.page.waitFor(() => document.URL === 'https://poczta.onet.pl/')
-    console.log('   * Login passed')
   }
 }
