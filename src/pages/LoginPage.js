@@ -8,8 +8,13 @@ module.exports = class LoginPage {
     this.loginButtonCss = 'input[class="loginButton"]'
   }
 
+  async sleep (ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms))
+  }
+
   async click(selector) {
     await this.page.waitFor(selector)
+    await this.sleep(1500)
 
     return this.page.click(selector)
   }
