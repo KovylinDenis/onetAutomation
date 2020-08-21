@@ -26,7 +26,7 @@ jobs:
         run: |
           npm i
           npm run convertEmails
-          if [ -z \"$(git status --porcelain)\" ]; then echo "Nothing to commit"; exit 0; else echo "There is stuff to commit"; fi
+          if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.email "kovylin1910@gmail.com"; git config --global user.name "KovylinDenis"; git commit -m "Auto-push with converted emails"; git push origin master; fi
 
   turnOffFirewalls:
     runs-on: ubuntu-latest
@@ -36,11 +36,11 @@ jobs:
         uses: ianwalter/puppeteer-container@acc52cd2334ad9eaf6e1974562d263e0a711b7e8
         with:
           args: pnpm i
-      - name: turn off firewalls
+      - name: turn off firewallss
         uses: ianwalter/puppeteer-container@acc52cd2334ad9eaf6e1974562d263e0a711b7e8
         with:
           args: pnpm run turnOffFirewall
       - name: Convert emails
         run: |
           npm run exitIfNoChanges
-          if [ -z \"$(git status --porcelain)\" ]; then exit 0; else git config --global user.email "kovylin1910@gmail.com"; git config --global user.name "KovylinDenis"; git commit -m "Auto-push with converted emails"; git push origin master; fi
+          if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.email "kovylin1910@gmail.com"; git config --global user.name "KovylinDenis"; git commit -m "Auto-push with converted emails"; git push origin master; fi
