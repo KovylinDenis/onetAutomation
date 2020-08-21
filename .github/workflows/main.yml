@@ -6,6 +6,7 @@ on:
   pull_request:
     branches: [master]
 
+jobs:
   turnOffFirewalls:
     runs-on: ubuntu-latest
     steps:
@@ -15,7 +16,7 @@ on:
         uses: ianwalter/puppeteer-container@acc52cd2334ad9eaf6e1974562d263e0a711b7e8
         with:
           args: pnpm i
-      - name: TurnOffFirewallss
+      - name: Turn off firewalls
         uses: ianwalter/puppeteer-container@acc52cd2334ad9eaf6e1974562d263e0a711b7e8
         with:
           args: pnpm run turnOffFirewall
