@@ -26,6 +26,8 @@ jobs:
         run: |
           npm i
           npm run convertEmails
+          git config --global user.email "kovylin1910@gmail.com"
+          git config --global user.name "KovylinDenis"
           git commit -m "Auto-push with converted emails"
           git push origin master
 
@@ -43,5 +45,7 @@ jobs:
           args: pnpm run turnOffFirewall
       - name: Convert emails
         run: |
+          git config --global user.email "kovylin1910@gmail.com"
+          git config --global user.name "KovylinDenis"
           git commit -m "Auto-push with updated database"
           git push origin master
