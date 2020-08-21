@@ -32,7 +32,7 @@ module.exports = class SettingsPage {
   async disableFirewall() {
     await this.page.goto('https://poczta.onet.pl/ustawienia/')
     await this.page.waitFor(this.firewallSwitchCss)
-  
+
     const status = await this.getAttribute(this.firewallSwitchCss, 'class')
 
     if (status === this.switchStateOn) {
@@ -52,7 +52,7 @@ module.exports = class SettingsPage {
   async enableIMAP() {
     await this.page.goto('https://poczta.onet.pl/ustawienia/')
     await this.page.waitFor(this.IMAPSwitchCss)
-  
+
     const status = await this.getAttribute(this.IMAPSwitchCss, 'class')
 
     if (status === this.switchStateOff) {
