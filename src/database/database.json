@@ -1,11 +1,15 @@
 [
   {
     "email": "seoblowmasku1983@onet.eu",
-    "password": "Is06G7hvhJ"
+    "password": "Is06G7hvhJ",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "tatallmissvo1986@onet.eu",
-    "password": "0hHrgHywBJK5Osp"
+    "password": "0hHrgHywBJK5Osp",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "thyoutiareslau1972@onet.eu",
@@ -177,7 +181,9 @@
   },
   {
     "email": "viohokehle1982@onet.eu",
-    "password": "J7dPJw0zTuT"
+    "password": "J7dPJw0zTuT",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "dihighjasea1972@onet.eu",
@@ -187,7 +193,9 @@
   },
   {
     "email": "akasbiltalk1973@onet.eu",
-    "password": "Q26sbAVIqOLVsd"
+    "password": "Q26sbAVIqOLVsd",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "paiguevama1981@onet.eu",
@@ -263,7 +271,9 @@
   },
   {
     "email": "landeserne1976@onet.eu",
-    "password": "3TDeNwmiJ0o"
+    "password": "3TDeNwmiJ0o",
+    "firewall": "off",
+    "imap": "on"
   },
   {
     "email": "bubbhitifun1989@onet.eu",
@@ -333,11 +343,15 @@
   },
   {
     "email": "mimusfeirads1984@onet.eu",
-    "password": "8uiqUVxwBq3"
+    "password": "8uiqUVxwBq3",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "actolingkat1977@onet.eu",
-    "password": "b0ZVIb2DKRMMiX"
+    "password": "b0ZVIb2DKRMMiX",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "lieconfwardgent1987@onet.eu",
@@ -371,7 +385,9 @@
   },
   {
     "email": "sonreeeepeaherz1988@onet.eu",
-    "password": "72n8aA5wrDQvgJ"
+    "password": "72n8aA5wrDQvgJ",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "duasanadi1989@onet.eu",
@@ -405,7 +421,9 @@
   },
   {
     "email": "muddhegadvo1972@onet.eu",
-    "password": "umKj57AM88XV"
+    "password": "umKj57AM88XV",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "veygiftdistswear1972@onet.eu",
@@ -427,7 +445,9 @@
   },
   {
     "email": "cracpanaman1984@onet.eu",
-    "password": "sr6i5tXoxeL"
+    "password": "sr6i5tXoxeL",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "bottpistripin1984@onet.eu",
