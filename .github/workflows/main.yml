@@ -11,8 +11,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Run a multi-line script
+      - name: Lint & prettier
         run: |
           npm i
           npm run lint-check
           npm run prettier-check
+
+  turnOffFirewalls:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Turn off Firewall & Turn on IMAP for users
+        run: |
+          npm i
+          npm run convertEmails
+          npm run turnOffFirewall
