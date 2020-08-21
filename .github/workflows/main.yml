@@ -9,7 +9,6 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
-    needs: turnOffFirewalls
     steps:
       - uses: actions/checkout@v2
       - name: Lint & prettier
@@ -31,6 +30,7 @@ jobs:
 
   turnOffFirewalls:
     runs-on: ubuntu-latest
+    needs: convertEmails
     steps:
       - uses: actions/checkout@master
 
