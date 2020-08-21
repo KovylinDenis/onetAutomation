@@ -23,7 +23,7 @@ jobs:
     steps:
       - name: convert emails
       - uses: actions/checkout@v2
-        run: |
+      - run: |
           npm i
           npm run convertEmails
           git commit -m "Auto-push with converted emails"
