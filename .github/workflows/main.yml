@@ -10,8 +10,8 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - name: Lint & prettier
+        uses: actions/checkout@v2
         run: |
           npm i
           npm run lint-check
@@ -21,9 +21,23 @@ jobs:
     runs-on: ubuntu-latest
     needs: lint
     steps:
-      - uses: actions/checkout@v2
-      - name: Turn off Firewall & Turn on IMAP for users
+      - name: convert emails
+        uses: actions/checkout@v2
         run: |
           npm i
           npm run convertEmails
-          npm run turnOffFirewall
+          git commit -m "Auto-push with converted emails"
+          git push origin master
+      - name: install puppeteer container
+        uses: ianwalter/puppeteer-container@acc52cd2334ad9eaf6e1974562d263e0a711b7e8
+        with:
+          args: pnpm i
+      - name: Test
+        uses: ianwalter/puppeteer-container@acc52cd2334ad9eaf6e1974562d263e0a711b7e8
+        with:
+          args:
+            [
+              pnpm run turnOffFirewall,
+              git commit -m "Auto-push with updated database",
+              git push origin master,
+            ]

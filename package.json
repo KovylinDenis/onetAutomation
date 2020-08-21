@@ -12,7 +12,8 @@
     "turnOffFirewall": "node ./src/model/turnOffFirewall.js"
   },
   "dependencies": {
-    "puppeteer": "^5.0.0"
+    "puppeteer": "^5.0.0",
+    "pnpm": "^5.5.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
