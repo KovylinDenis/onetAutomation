@@ -4,7 +4,10 @@ const {LoginPage, SettingsPage} = require(path.resolve('src', 'pages'))
 
 const disableFirewallForUser = async ({user}) => {
   const browser = await puppeteer.launch({
-    args: ['--no-sandbox']
+    args: ['--no-sandbox'],
+    headless: false,
+    defaultViewport: null,
+    timeout: 30000
   })
 
   try {
