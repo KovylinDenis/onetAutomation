@@ -2,17 +2,17 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Run a multi-line script
-      run: |
-        npm i
-        npm run lint-check
-        npm run prettier-check
+      - uses: actions/checkout@v2
+      - name: Run a multi-line script
+        run: |
+          npm i
+          npm run lint-check
+          npm run prettier-check
