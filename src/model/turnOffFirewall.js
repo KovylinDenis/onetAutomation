@@ -1,54 +1,68 @@
 const fs = require('fs')
 const path = require('path')
-const puppeteer = require('puppeteer')
 const {readFileAsync} = require(path.resolve('src', 'model', 'utils'))
-const {LoginPage, SettingsPage} = require(path.resolve('src', 'pages'))
+const {disableFirewallForUser} = require(path.resolve(
+  'src',
+  'controller',
+  'puppeteerController'
+))
 const DATABASE_FILE = path.resolve('src', 'database', 'database.json')
-const retries = 2
+const retries = 4
+
+const searchForUsersWithFirewall = async () => {
+  const database = JSON.parse(await readFileAsync(DATABASE_FILE))
+  const usersWithFirewall = []
+
+  for (let i = 0; i < database.length; i++) {
+    if (!('firewall' in database[i]) || database[i].firewall !== 'off') {
+      usersWithFirewall.push(database[i])
+    }
+  }
+
+  return usersWithFirewall
+}
+
+const rewriteUser = async ({user}) => {
+  const database = JSON.parse(await readFileAsync(DATABASE_FILE))
+  const userIndexInDataBase = database.findIndex(
+    (el) => el.email === user.email
+  )
+
+  if (userIndexInDataBase !== -1) {
+    database[userIndexInDataBase] = user
+  } else {
+    database.push(user)
+  }
+
+  fs.writeFileSync(DATABASE_FILE, JSON.stringify(database, null, 2))
+}
 
 const main = async () => {
   const t0 = Date.now()
-
   for (let retry = 0; retry < retries + 1; retry++) {
-    const database = JSON.parse(await readFileAsync(DATABASE_FILE))
+    const users = await searchForUsersWithFirewall()
 
-    for (let i = 0; i < database.length; i++) {
-      if (!('firewall' in database[i]) || database[i].firewall !== 'off') {
-        console.log(
-          `i: ${i} retry: ${retry} Disabling firewall for: ${database[i].email}`
-        )
+    if (users.length !== 0) {
+      const t00 = Date.now()
+      console.log(`${users.length} users were found for ${retry + 1} retry`)
 
-        const browser = await puppeteer.launch({
-          headless: false,
-          defaultViewport: null,
-          timeout: 30000
-        })
-
-        try {
-          const page = await browser.newPage()
-          const loginPage = new LoginPage({page})
-          const settingsPage = new SettingsPage({page})
-
-          await loginPage.doLogin({credentials: database[i]})
-          if (database[i].imap !== 'on') {
-            await settingsPage.enableIMAP()
-            database[i].imap = 'on'
-          }
-
-          await settingsPage.disableFirewall()
-          database[i].firewall = 'off'
-        } catch (error) {
-          console.log(`ERROR! User: ${database[i].email}\n${error}`)
-          database[i].firewall = 'error: ' + error
-        } finally {
-          await browser.close()
-        }
+      for (let i = 0; i < users.length; i++) {
+        users[i] = await disableFirewallForUser({user: users[i]})
+        await rewriteUser({user: users[i]})
       }
+
+      const t11 = Date.now()
+      console.log(
+        `Done! Time passed for ${retry + 1} iteration: ${(t11 - t00) /
+          1000} seconds`
+      )
+      continue
     }
-    fs.writeFileSync(DATABASE_FILE, JSON.stringify(database, null, 2), () => {})
+    console.log(`No more users with turned on firewall were found!`)
+    break
   }
   const t1 = Date.now()
-  console.log(`Done! Time passed: ${(t1 - t0) / 1000} seconds`)
+  console.log(`Done! Total time passed: ${(t1 - t0) / 1000} seconds`)
 }
 
 ;(async () => {
