@@ -37,12 +37,12 @@ jobs:
         uses: ianwalter/puppeteer-container@acc52cd2334ad9eaf6e1974562d263e0a711b7e8
         with:
           args: pnpm i
-      - name: Test
+      - name: turn off firewalls
         uses: ianwalter/puppeteer-container@acc52cd2334ad9eaf6e1974562d263e0a711b7e8
         with:
-          args:
-            [
-              pnpm run turnOffFirewall,
-              git commit -m "Auto-push with updated database",
-              git push origin master,
-            ]
+          args: pnpm run turnOffFirewall
+      - name: Convert emails
+        run: |
+          git commit -m "Auto-push with updated database"
+          git push origin master
+              
