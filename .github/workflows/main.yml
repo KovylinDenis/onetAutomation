@@ -18,6 +18,8 @@ on:
       - name: Turn off firewallss
         uses: ianwalter/puppeteer-container@acc52cd2334ad9eaf6e1974562d263e0a711b7e8
         with:
-          args: |
-          pnpm run turnOffFirewall
-          if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.email "kovylin1910@gmail.com"; git config --global user.name "KovylinDenis"; git commit -m "Auto-push with converted emails"; git push origin master; fi
+          args: pnpm run turnOffFirewall
+      - name: Commit
+        uses: ianwalter/puppeteer-container@acc52cd2334ad9eaf6e1974562d263e0a711b7e8
+        with:
+          args: if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.email "kovylin1910@gmail.com"; git config --global user.name "KovylinDenis"; git commit -m "Auto-push with converted emails"; git push origin master; fi
