@@ -45,4 +45,3 @@ jobs:
         run: |
           git commit -m "Auto-push with updated database"
           git push origin master
-              
