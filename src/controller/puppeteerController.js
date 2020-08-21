@@ -6,6 +6,7 @@ const disableFirewallForUser = async ({user}) => {
   const browser = await puppeteer.launch({
     args: ['--no-sandbox'],
     headless: false,
+    executablePath: process.env.PUPPETEER_EXEC_PATH,
     defaultViewport: null,
     timeout: 30000
   })

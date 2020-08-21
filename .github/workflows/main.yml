@@ -10,17 +10,47 @@ jobs:
   turnOffFirewalls:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install puppeteer container
-        uses: ianwalter/puppeteer-container@acc52cd2334ad9eaf6e1974562d263e0a711b7e8
+      - uses: actions/checkout@master
+
+      - name: Install Dependencies
+        uses: actions/npm@master
+        env:
+          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 'true'
         with:
-          args: pnpm i
-      - name: Turn off firewalls
-        uses: ianwalter/puppeteer-container@acc52cd2334ad9eaf6e1974562d263e0a711b7e8
+          args: install
+
+      - name: Turn off firewall
+        uses: mujo-code/puppeteer-headful@master
+        env:
+          CI: 'true'
         with:
-          args: pnpm run turnOffFirewall
+          args: npm run turnOffFirewall
+
       - name: Commit
-        uses: ianwalter/puppeteer-container@acc52cd2334ad9eaf6e1974562d263e0a711b7e8
+        uses: mujo-code/puppeteer-headful@master
+        env:
+          CI: 'true'
         with:
           args: if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.email "kovylin1910@gmail.com"; git config --global user.name "KovylinDenis"; git commit -m "Auto-push with converted emails"; git push origin master; fi
+
+  lint:
+    runs-on: ubuntu-latest
+    needs: turnOffFirewalls
+    steps:
+      - uses: actions/checkout@v2
+      - name: Lint & prettier
+        run: |
+          npm i
+          npm run lint-check
+          npm run prettier-check
+
+  convertEmails:
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - uses: actions/checkout@v2
+      - name: Convert emails
+        run: |
+          npm i
+          npm run convertEmails
+          if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.email "kovylin1910@gmail.com"; git config --global user.name "KovylinDenis"; git commit -m "Auto-push with converted emails"; git push origin master; fi
