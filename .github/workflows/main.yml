@@ -23,11 +23,7 @@ jobs:
           args: npm run turnOffFirewall
 
       - name: Commit
-        uses: mujo-code/puppeteer-headful@master
-        env:
-          CI: 'true'
-        with:
-          args: if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.email "kovylin1910@gmail.com"; git config --global user.name "KovylinDenis"; git commit -m "Auto-push with converted emails"; git push origin master; fi
+        run: if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.email "kovylin1910@gmail.com"; git config --global user.name "KovylinDenis"; git commit -m "Auto-push with converted emails"; git push origin master; fi
 
   lint:
     runs-on: ubuntu-latest
