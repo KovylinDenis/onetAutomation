@@ -13,5 +13,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run a multi-line script
       run: |
+        npm i
         npm run lint-check
         npm run prettier-check
