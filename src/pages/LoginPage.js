@@ -27,13 +27,9 @@ module.exports = class LoginPage {
 
   async doLogin({credentials}) {
     await this.page.goto('https://www.onet.pl/poczta')
-    await this.page.waitFor(this.acceptPolicyButtonCss)
     await this.click(this.acceptPolicyButtonCss)
-    await this.page.waitFor(this.loginInputCss)
     await this.type(this.loginInputCss, credentials.email)
-    await this.page.waitFor(this.passwordInputCss)
     await this.type(this.passwordInputCss, credentials.password)
-    await this.page.waitFor(this.loginButtonCss)
     await this.click(this.loginButtonCss)
     await this.page.waitFor(() => document.URL === 'https://poczta.onet.pl/')
   }
