@@ -1,23 +1,33 @@
 [
   {
     "email": "seoblowmasku1983@onet.eu",
-    "password": "Is06G7hvhJ"
+    "password": "Is06G7hvhJ",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "tatallmissvo1986@onet.eu",
-    "password": "0hHrgHywBJK5Osp"
+    "password": "0hHrgHywBJK5Osp",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "thyoutiareslau1972@onet.eu",
-    "password": "93bte1YGeXQ"
+    "password": "93bte1YGeXQ",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "brasatmichoc1973@onet.eu",
-    "password": "EQjUWP0ZPXU"
+    "password": "EQjUWP0ZPXU",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "tertarero1976@onet.eu",
-    "password": "0N2rsttEhvOxJH"
+    "password": "0N2rsttEhvOxJH",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "owanmagtio1979@onet.eu",
