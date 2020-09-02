@@ -37,4 +37,5 @@ jobs:
           args: npm run turnOffFirewall
 
       - name: Commit
+        if: ${{ always() }}
         run: if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.name "github-actions[bot]"; git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"; git add -A; git commit -m "Auto-push with converted emails"; git push origin master; fi
