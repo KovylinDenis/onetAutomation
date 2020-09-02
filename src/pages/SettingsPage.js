@@ -5,6 +5,7 @@ module.exports = class SettingsPage {
     this.IMAPSwitchCss = 'span[id="infoImap"]'
     this.switchStateOff = 'switchoff2'
     this.switchStateOn = 'switchon2'
+    this.clickRetryCount = 2
   }
 
   async sleep(ms) {
@@ -40,15 +41,26 @@ module.exports = class SettingsPage {
     const status = await this.getAttribute(this.firewallSwitchCss, 'class')
 
     if (status === this.switchStateOn) {
-      await this.click(this.firewallSwitchCss)
-      console.log('   * Firewall switch clicked')
-    }
+      for (let i = 0; i < this.clickRetryCount + 1; i++) {
+        await this.click(this.firewallSwitchCss)
+        console.log(`   * Firewall switch clicked, attempt: ${i + 1}`)
 
-    await this.page.reload()
+        await this.page.reload()
+        await this.sleep(i * 1000)
 
-    const newStatus = await this.getAttribute(this.firewallSwitchCss, 'class')
-    if (newStatus === this.switchStateOn) {
-      throw new Error('Firewall disabling failed!')
+        const newStatus = await this.getAttribute(
+          this.firewallSwitchCss,
+          'class'
+        )
+        if (newStatus === this.switchStateOn) {
+          if (i >= this.clickRetryCount) {
+            throw new Error('   * Firewall disabling failed!')
+          } else {
+            continue
+          }
+        }
+        break
+      }
     }
   }
 
@@ -58,15 +70,23 @@ module.exports = class SettingsPage {
     const status = await this.getAttribute(this.IMAPSwitchCss, 'class')
 
     if (status === this.switchStateOff) {
-      await this.click(this.IMAPSwitchCss)
-      console.log('   * IMAP switch clicked')
-    }
+      for (let i = 0; i < this.clickRetryCount + 1; i++) {
+        await this.click(this.IMAPSwitchCss)
+        console.log(`   * IMAP switch clicked, attempt: ${i + 1}`)
 
-    await this.page.reload()
+        await this.page.reload()
+        await this.sleep(i * 1000)
 
-    const newStatus = await this.getAttribute(this.IMAPSwitchCss, 'class')
-    if (newStatus === this.switchStateOff) {
-      throw new Error('IMAP enabling failed!')
+        const newStatus = await this.getAttribute(this.IMAPSwitchCss, 'class')
+        if (newStatus === this.switchStateOff) {
+          if (i >= this.clickRetryCount) {
+            throw new Error('   * IMAP enabling failed!')
+          } else {
+            continue
+          }
+        }
+        break
+      }
     }
   }
 }

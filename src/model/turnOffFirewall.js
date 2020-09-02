@@ -47,7 +47,11 @@ const main = async () => {
       console.log(`${users.length} users were found for ${retry + 1} retry`)
 
       for (let i = 0; i < users.length; i++) {
-        console.log(`Disabling firewall for: ${users[i].email}`)
+        console.log(
+          `Loop: ${retry + 1} Index: ${i} Disabling firewall for: ${
+            users[i].email
+          }`
+        )
         users[i] = await disableFirewallForUser({user: users[i]})
         await rewriteUser({user: users[i]})
         console.log('   * All done for this user')
