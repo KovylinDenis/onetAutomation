@@ -25261,7 +25261,9 @@
   },
   {
     "email": "lajma-kostyleva285@spoko.pl",
-    "password": "m9sqwdf16JYmLV"
+    "password": "m9sqwdf16JYmLV",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "sara_kinzhaeva902@op.pl",
@@ -25505,7 +25507,9 @@
   },
   {
     "email": "grusha_severinova034@cyberia.pl",
-    "password": "0j53ssMPIzz8SpC"
+    "password": "0j53ssMPIzz8SpC",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "avgusta.zhurkina784@cyberia.pl",
@@ -25581,7 +25585,9 @@
   },
   {
     "email": "antonina_vtulkina663@pseudonim.pl",
-    "password": "Wnn6Ld2zjZW"
+    "password": "Wnn6Ld2zjZW",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "beata-rokossovskaya669@onet.eu",
@@ -25616,7 +25622,8 @@
   {
     "email": "kira_kuzenkova034@op.pl",
     "password": "fANpO16r28kJ",
-    "firewall": "error: Error: Node is either not visible or not an HTMLElement"
+    "firewall": "off",
+    "imap": "on"
   },
   {
     "email": "gayane-ogorodnikova868@adres.pl",
@@ -25752,7 +25759,9 @@
   },
   {
     "email": "alevtina.bajsultanova485@pseudonim.pl",
-    "password": "ovLdo6SqBPxa"
+    "password": "ovLdo6SqBPxa",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "pavlina.lyapunova906@op.pl",
@@ -25793,7 +25802,8 @@
   {
     "email": "bogdana.bakhmeteva890@op.pl",
     "password": "B311mHZ0OXe4Y",
-    "firewall": "error: Error: Node is either not visible or not an HTMLElement"
+    "firewall": "off",
+    "imap": "on"
   },
   {
     "email": "mirdza-shilkina168@autograf.pl",
@@ -26122,7 +26132,8 @@
   {
     "email": "cheslava-dambarinchinova366@onet.pl",
     "password": "cUQUO54rR2fUm",
-    "firewall": "error: Error: Node is either not visible or not an HTMLElement"
+    "firewall": "off",
+    "imap": "on"
   },
   {
     "email": "majya.nikolskaya335@autograf.pl",
@@ -26132,7 +26143,9 @@
   },
   {
     "email": "bozhena.galyamshina599@op.pl",
-    "password": "zZh3V72OPSKS"
+    "password": "zZh3V72OPSKS",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "pavlina-turzhanskaya073@spoko.pl",
