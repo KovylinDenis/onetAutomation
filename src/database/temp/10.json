@@ -1,6 +1,8 @@
 [
   {
     "email": "milica-bajnazarova752@adres.pl",
-    "password": "QgSZDzAv472u8B4"
+    "password": "QgSZDzAv472u8B4",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
