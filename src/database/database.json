@@ -27225,11 +27225,15 @@
   },
   {
     "email": "lyubomira-draniczyna582@pseudonim.pl",
-    "password": "HC3DbUJD054bZ"
+    "password": "HC3DbUJD054bZ",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "gayane-narykova708@onet.eu",
-    "password": "S70XLAv04ZBMyY"
+    "password": "S70XLAv04ZBMyY",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "ruzana_lozinskaya047@vp.pl",
@@ -27249,7 +27253,9 @@
   },
   {
     "email": "agnessa.chelysheva417@onet.eu",
-    "password": "Ri386EXPxScn16"
+    "password": "Ri386EXPxScn16",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "oksana.bessmertnaya556@onet.pl",
@@ -27257,7 +27263,9 @@
   },
   {
     "email": "angelina-abinaeva341@spoko.pl",
-    "password": "1ilgJKN31S1VTE"
+    "password": "1ilgJKN31S1VTE",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "dajna-ostapyuka363@spoko.pl",
@@ -27265,7 +27273,9 @@
   },
   {
     "email": "sima.slepynina670@onet.pl",
-    "password": "GZEpS0c2Y2k8gwG"
+    "password": "GZEpS0c2Y2k8gwG",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "vladislava_komchatova922@onet.pl",
@@ -27273,10 +27283,14 @@
   },
   {
     "email": "roksana-puzakova375@vp.pl",
-    "password": "5sjMcLdgqgLFp"
+    "password": "5sjMcLdgqgLFp",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "irma_borodkova722@onet.eu",
-    "password": "C8wUA07eYUnI34P"
+    "password": "C8wUA07eYUnI34P",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
