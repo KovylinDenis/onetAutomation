@@ -1,6 +1,8 @@
 [
   {
     "email": "kamilla.kiryanova732@opoczta.pl",
-    "password": "OZD8vM9RUypl7u"
+    "password": "OZD8vM9RUypl7u",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
