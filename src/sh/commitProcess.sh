@@ -9,7 +9,7 @@ else
   git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"; 
   git pull origin; 
   git stash; 
-  git checkout -b "$GITHUB_SHA-branch"; 
+  git checkout --track origin/"$GITHUB_SHA-branch"; 
   git stash pop; 
   git add -A; 
   git commit -m "Processed accounts Part $DATABASE_PART"; 

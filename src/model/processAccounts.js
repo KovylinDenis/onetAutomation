@@ -28,7 +28,7 @@ const main = async () => {
     if (process.env.DATABASE_PART === undefined) {
       users = await searchForAccountsToProcess({databasePath: DATABASE_FILE})
     } else {
-      users = await readFileAsync(DATABASE_FILE)
+      users = JSON.parse(await readFileAsync(DATABASE_FILE))
     }
 
     if (users.length !== 0) {

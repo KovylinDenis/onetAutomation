@@ -338,6 +338,7 @@ jobs:
         run: sh ./src/sh/commitProcess.sh
 
   mergeAccounts:
+    if: ${{ always() }}
     runs-on: ubuntu-latest
     needs:
       [
@@ -367,4 +368,4 @@ jobs:
 
       - name: Commit & Merge branches
         if: ${{ always() }}
-        run: sh ./src/sh/commitMerge.sh 
+        run: sh ./src/sh/commitMerge.sh
