@@ -26935,7 +26935,9 @@
   },
   {
     "email": "monika_aniskina138@autograf.pl",
-    "password": "QsKXwG9XnkSxAEL"
+    "password": "QsKXwG9XnkSxAEL",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "izabella.zhebrovskaya335@onet.pl",
@@ -26943,7 +26945,9 @@
   },
   {
     "email": "rufina_bocharova379@adres.pl",
-    "password": "9DtmdM2eO3krO"
+    "password": "9DtmdM2eO3krO",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "silva.griboedova200@opoczta.pl",
@@ -26969,7 +26973,9 @@
   },
   {
     "email": "varvara-vaninskaya730@onet.pl",
-    "password": "ivuf9H9V0El"
+    "password": "ivuf9H9V0El",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "marica-travnikova139@op.pl",
@@ -26977,15 +26983,21 @@
   },
   {
     "email": "aza.kashnikova102@cyberia.pl",
-    "password": "15iM5t0crWSacP4"
+    "password": "15iM5t0crWSacP4",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "svetlana_alikova760@opoczta.pl",
-    "password": "KC78jx40RNG9Lk6S"
+    "password": "KC78jx40RNG9Lk6S",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "eleonora_rugova590@autograf.pl",
-    "password": "842FSMlre0D"
+    "password": "842FSMlre0D",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "veselina.glushenkova834@opoczta.pl",
@@ -27015,7 +27027,9 @@
   },
   {
     "email": "klara-barinova183@adres.pl",
-    "password": "8e1sozoQri43u62gf"
+    "password": "8e1sozoQri43u62gf",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "yuzefa.dymchikova107@onet.eu",
@@ -27045,19 +27059,27 @@
   },
   {
     "email": "anfisa.dadasheva429@op.pl",
-    "password": "jO29W416YC2pKu7m1"
+    "password": "jO29W416YC2pKu7m1",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "inara-bekhtieva244@opoczta.pl",
-    "password": "9AKYD2Gasb2G1g"
+    "password": "9AKYD2Gasb2G1g",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "kamilla_myshkina245@pseudonim.pl",
-    "password": "JiBX03FEYDlGkz"
+    "password": "JiBX03FEYDlGkz",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "serafima-bendrikova481@onet.eu",
-    "password": "Y9c3srCsTo3I"
+    "password": "Y9c3srCsTo3I",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "dajna_plenkina144@cyberia.pl",
