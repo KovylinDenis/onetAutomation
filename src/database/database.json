@@ -27505,7 +27505,9 @@
   },
   {
     "email": "agrafena-kafka048@onet.pl",
-    "password": "z9kxMYX2Vs6T5U3ZT"
+    "password": "z9kxMYX2Vs6T5U3ZT",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "danuta_voishheva199@pseudonim.pl",
@@ -27513,15 +27515,21 @@
   },
   {
     "email": "evfrosinya-aczepaeva651@opoczta.pl",
-    "password": "gV8ph4nFY14"
+    "password": "gV8ph4nFY14",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "irina.imedoeva962@adres.pl",
-    "password": "3NtTLmn67X8H42P2i"
+    "password": "3NtTLmn67X8H42P2i",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "linda_mukhova551@opoczta.pl",
-    "password": "Tb9wvPSJp2a5"
+    "password": "Tb9wvPSJp2a5",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "bella.fedyaeva893@spoko.pl",
@@ -27529,11 +27537,15 @@
   },
   {
     "email": "borislava-chelpanova102@spoko.pl",
-    "password": "1XgOHWu0nT7"
+    "password": "1XgOHWu0nT7",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "yaroslava_bakarinczeva943@cyberia.pl",
-    "password": "oQuvwBw0N3uHb"
+    "password": "oQuvwBw0N3uHb",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "taisiya.glinchevskaya500@op.pl",
@@ -27541,15 +27553,21 @@
   },
   {
     "email": "vida.burlakova740@autograf.pl",
-    "password": "AfNBdc6FsiV"
+    "password": "AfNBdc6FsiV",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "milica-bajnazarova752@adres.pl",
-    "password": "QgSZDzAv472u8B4"
+    "password": "QgSZDzAv472u8B4",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "karolina-sochevanova857@onet.pl",
-    "password": "0eJ6IP0cvpStfI46"
+    "password": "0eJ6IP0cvpStfI46",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "mirdza-skripiczyna766@onet.pl",
@@ -27561,10 +27579,14 @@
   },
   {
     "email": "valentina_kutorga489@onet.pl",
-    "password": "iY4LGC7u4u0MxKXh"
+    "password": "iY4LGC7u4u0MxKXh",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "debora-golovunina904@onet.eu",
-    "password": "d3aFptSUD1c327TT"
+    "password": "d3aFptSUD1c327TT",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
