@@ -1,6 +1,8 @@
 [
   {
     "email": "oksana.bessmertnaya556@onet.pl",
-    "password": "v7rgupejoKso"
+    "password": "v7rgupejoKso",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
