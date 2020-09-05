@@ -1,34 +1,50 @@
 [
   {
     "email": "ivetta_kipeneva526@cyberia.pl",
-    "password": "BzeGwgO72LZSdEcBQ"
+    "password": "BzeGwgO72LZSdEcBQ",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "margarita_rovnova164@autograf.pl",
-    "password": "fi1V7X8ueD274ia"
+    "password": "fi1V7X8ueD274ia",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "ivetta_aleksakhina428@cyberia.pl",
-    "password": "aXoOrOT42hM30rK1"
+    "password": "aXoOrOT42hM30rK1",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "laura.anfilatova136@spoko.pl",
-    "password": "wfuOK1lMDPnZ"
+    "password": "wfuOK1lMDPnZ",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "neonila.dzhamaludinova034@pseudonim.pl",
-    "password": "XTyKDgGt6lXTiC"
+    "password": "XTyKDgGt6lXTiC",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "hilda.pyanykha829@op.pl",
-    "password": "9m4OCNV0sf2a827"
+    "password": "9m4OCNV0sf2a827",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "majya-zyabliczeva302@opoczta.pl",
-    "password": "8tv0wZ3d1aJ"
+    "password": "8tv0wZ3d1aJ",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "natalya_vyatkina222@opoczta.pl",
-    "password": "KvLOR8JBZVs8N"
+    "password": "KvLOR8JBZVs8N",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
