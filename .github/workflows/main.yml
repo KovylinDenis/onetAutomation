@@ -35,8 +35,9 @@ jobs:
         uses: mujo-code/puppeteer-headful@master
         env:
           CI: 'true'
+          DATABASE_PART: 0
         with:
-          args: export DATABASE_PART=0; npm run processAccounts
+          args: npm run processAccounts
 
       - name: Commit
         if: ${{ always() }}
@@ -55,8 +56,9 @@ jobs:
         uses: mujo-code/puppeteer-headful@master
         env:
           CI: 'true'
+          DATABASE_PART: 1
         with:
-          args: export DATABASE_PART=1; npm run processAccounts
+          args: npm run processAccounts
 
       - name: Commit
         if: ${{ always() }}
@@ -75,8 +77,9 @@ jobs:
         uses: mujo-code/puppeteer-headful@master
         env:
           CI: 'true'
+          DATABASE_PART: 2
         with:
-          args: export DATABASE_PART=2; npm run processAccounts
+          args: npm run processAccounts
 
       - name: Commit
         if: ${{ always() }}
@@ -95,8 +98,9 @@ jobs:
         uses: mujo-code/puppeteer-headful@master
         env:
           CI: 'true'
+          DATABASE_PART: 3
         with:
-          args: export DATABASE_PART=3; npm run processAccounts
+          args: npm run processAccounts
 
       - name: Commit
         if: ${{ always() }}
@@ -115,8 +119,9 @@ jobs:
         uses: mujo-code/puppeteer-headful@master
         env:
           CI: 'true'
+          DATABASE_PART: 4
         with:
-          args: export DATABASE_PART=4; npm run processAccounts
+          args: npm run processAccounts
 
       - name: Commit
         if: ${{ always() }}
@@ -135,8 +140,9 @@ jobs:
         uses: mujo-code/puppeteer-headful@master
         env:
           CI: 'true'
+          DATABASE_PART: 5
         with:
-          args: export DATABASE_PART=5; npm run processAccounts
+          args: npm run processAccounts
 
       - name: Commit
         if: ${{ always() }}
@@ -155,8 +161,9 @@ jobs:
         uses: mujo-code/puppeteer-headful@master
         env:
           CI: 'true'
+          DATABASE_PART: 6
         with:
-          args: export DATABASE_PART=6; npm run processAccounts
+          args: npm run processAccounts
 
       - name: Commit
         if: ${{ always() }}
@@ -175,8 +182,9 @@ jobs:
         uses: mujo-code/puppeteer-headful@master
         env:
           CI: 'true'
+          DATABASE_PART: 7
         with:
-          args: export DATABASE_PART=7; npm run processAccounts
+          args: npm run processAccounts
 
       - name: Commit
         if: ${{ always() }}
@@ -195,8 +203,9 @@ jobs:
         uses: mujo-code/puppeteer-headful@master
         env:
           CI: 'true'
+          DATABASE_PART: 8
         with:
-          args: export DATABASE_PART=8; npm run processAccounts
+          args: npm run processAccounts
 
       - name: Commit
         if: ${{ always() }}
@@ -215,8 +224,9 @@ jobs:
         uses: mujo-code/puppeteer-headful@master
         env:
           CI: 'true'
+          DATABASE_PART: 9
         with:
-          args: export DATABASE_PART=9; npm run processAccounts
+          args: npm run processAccounts
 
       - name: Commit
         if: ${{ always() }}
@@ -235,8 +245,9 @@ jobs:
         uses: mujo-code/puppeteer-headful@master
         env:
           CI: 'true'
+          DATABASE_PART: 10
         with:
-          args: export DATABASE_PART=10; npm run processAccounts
+          args: npm run processAccounts
 
       - name: Commit
         if: ${{ always() }}
@@ -255,8 +266,9 @@ jobs:
         uses: mujo-code/puppeteer-headful@master
         env:
           CI: 'true'
+          DATABASE_PART: 11
         with:
-          args: export DATABASE_PART=11; npm run processAccounts
+          args: npm run processAccounts
 
       - name: Commit
         if: ${{ always() }}
@@ -275,8 +287,9 @@ jobs:
         uses: mujo-code/puppeteer-headful@master
         env:
           CI: 'true'
+          DATABASE_PART: 12
         with:
-          args: export DATABASE_PART=12; npm run processAccounts
+          args: npm run processAccounts
 
       - name: Commit
         if: ${{ always() }}
@@ -295,8 +308,9 @@ jobs:
         uses: mujo-code/puppeteer-headful@master
         env:
           CI: 'true'
+          DATABASE_PART: 13
         with:
-          args: export DATABASE_PART=13; npm run processAccounts
+          args: npm run processAccounts
 
       - name: Commit
         if: ${{ always() }}
@@ -315,8 +329,9 @@ jobs:
         uses: mujo-code/puppeteer-headful@master
         env:
           CI: 'true'
+          DATABASE_PART: 14
         with:
-          args: export DATABASE_PART=14; npm run processAccounts
+          args: npm run processAccounts
 
       - name: Commit
         if: ${{ always() }}
