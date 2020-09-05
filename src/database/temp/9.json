@@ -1,6 +1,8 @@
 [
   {
     "email": "vida.burlakova740@autograf.pl",
-    "password": "AfNBdc6FsiV"
+    "password": "AfNBdc6FsiV",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
