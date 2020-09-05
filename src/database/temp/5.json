@@ -1,6 +1,8 @@
 [
   {
     "email": "santa-baralgina645@cyberia.pl",
-    "password": "Tkh4kkY9l75"
+    "password": "Tkh4kkY9l75",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
