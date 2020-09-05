@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -z "$(git status --short)" ]
+if [[ (-z "$(git status --short)"]) || (! -z "$(git diff $GITHUB_SHA-branch origin/$GITHUB_SHA-branch)")]]
 then 
   echo "Nothing to commit after processing"; 
   exit 0; 

@@ -10,7 +10,7 @@ const sleep = async (ms) => {
 const main = async () => {
   for (let i = 0; i < commitRetries; i++) {
     try {
-      const { stdout, stderr } = await exec('sh ./src/sh/commitProcess.sh')
+      const {stdout, stderr} = await exec('sh ./src/sh/commitProcess.sh')
       console.log('stdout:', stdout)
       console.log('stderr:', stderr)
     } catch (err) {
