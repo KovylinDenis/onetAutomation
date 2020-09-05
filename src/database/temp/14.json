@@ -37,6 +37,8 @@
   },
   {
     "email": "hristina-kolchina319@vp.pl",
-    "password": "mBcMEEA077PyYPfMG"
+    "password": "mBcMEEA077PyYPfMG",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
