@@ -1,6 +1,8 @@
 [
   {
     "email": "angelina-abinaeva341@spoko.pl",
-    "password": "1ilgJKN31S1VTE"
+    "password": "1ilgJKN31S1VTE",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
