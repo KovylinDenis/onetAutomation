@@ -9,9 +9,9 @@ else
   git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"; 
   git pull origin; 
   git stash; 
-  git checkout -b "$GITHUB_SHA-branch"; 
+  git checkout -b "$GITHUB_SHA"; 
   git stash pop; 
   git add -A; 
   git commit -m "Splited accounts"; 
-  git push origin "$GITHUB_SHA-branch"; 
+  git push origin "$GITHUB_SHA"; 
 fi

@@ -9,12 +9,12 @@ else
   git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"; 
   git pull origin; 
   git stash; 
-  git checkout --track origin/"$GITHUB_SHA-branch"; 
+  git checkout --track origin/"$GITHUB_SHA"; 
   git stash pop; 
   git add -A; 
   git commit -m "Cleanup"; 
-  git push origin "$GITHUB_SHA-branch"; 
+  git push origin "$GITHUB_SHA"; 
   git checkout master; 
-  git merge "$GITHUB_SHA-branch"; 
+  git merge "$GITHUB_SHA"; 
   git push origin master 
 fi
