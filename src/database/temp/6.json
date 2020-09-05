@@ -1,6 +1,8 @@
 [
   {
     "email": "borislava-chelpanova102@spoko.pl",
-    "password": "1XgOHWu0nT7"
+    "password": "1XgOHWu0nT7",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
