@@ -1,6 +1,8 @@
 [
   {
     "email": "gayane_leonteva947@cyberia.pl",
-    "password": "fkad79CjUpfLcTI"
+    "password": "fkad79CjUpfLcTI",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
