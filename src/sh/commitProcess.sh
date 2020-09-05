@@ -2,11 +2,11 @@
 status="$(git status --short)"
 diff="$(git diff master origin/master)"
 sum=$status$diff
-if [ -z "$sum" ]
-then 
+#if [ -z "$sum" ]
+#then 
   echo "Nothing to commit or push after processing"; 
   exit 0; 
-else       
+#else       
   echo "status: '$status'"
   echo "diff: '$diff'"
   echo "sum: '$sum'"
@@ -21,4 +21,4 @@ else
   git pull --rebase origin "$GITHUB_SHA-branch"; 
   git push --force origin "$GITHUB_SHA-branch";
   sleep 3
-fi
+#fi
