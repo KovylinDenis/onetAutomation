@@ -1,18 +1,26 @@
 [
   {
     "email": "anfisa.dadasheva429@op.pl",
-    "password": "jO29W416YC2pKu7m1"
+    "password": "jO29W416YC2pKu7m1",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "inara-bekhtieva244@opoczta.pl",
-    "password": "9AKYD2Gasb2G1g"
+    "password": "9AKYD2Gasb2G1g",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "kamilla_myshkina245@pseudonim.pl",
-    "password": "JiBX03FEYDlGkz"
+    "password": "JiBX03FEYDlGkz",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "serafima-bendrikova481@onet.eu",
-    "password": "Y9c3srCsTo3I"
+    "password": "Y9c3srCsTo3I",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
