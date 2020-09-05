@@ -1,6 +1,8 @@
 [
   {
     "email": "eleonora_rugova590@autograf.pl",
-    "password": "842FSMlre0D"
+    "password": "842FSMlre0D",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
