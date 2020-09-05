@@ -9,7 +9,10 @@
     "lint-check": "eslint .",
     "prettier-check": "prettier --check \"**/*.+(js|json|yml|md)\"",
     "convertEmails": "node ./src/model/parseCredentials.js",
-    "turnOffFirewall": "node ./src/model/turnOffFirewall.js"
+    "splitAccounts": "node ./src/model/splitAccounts.js",
+    "processAccounts": "node ./src/model/processAccounts.js",
+    "mergeAccounts": "node ./src/model/mergeAccounts.js",
+    "tempCleanup": "rm -v ./src/database/temp/*"
   },
   "dependencies": {
     "puppeteer": "^5.0.0",

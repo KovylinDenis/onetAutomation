@@ -26,8 +26,8 @@
 - You need to convert raw data that you placed in _raw_ folder into script-readable format. To do that run next command:
   - `npm run convertEmails`
 - After that you will see all the accounts in JSON format stored in _src/database_ folder.
-- Now you are prepared for disabling Firewall and enabling IMAP for those accounts. Just simply run next command:
-  - `npm run turnOffFirewall`
+- Now you are prepared for disabling Firewall and enabling IMAP and SMTP for those accounts. Just simply run next command:
+  - `npm run processAccounts`
 - Please after run is completed run next commands to save updated database in repository:
   - (optional) `git config --global user.name "YourName"`
   - (optional) `git config --global user.email "yourEmail@someMail.com"`

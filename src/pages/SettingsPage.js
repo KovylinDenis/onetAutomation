@@ -3,6 +3,7 @@ module.exports = class SettingsPage {
     this.page = page
     this.firewallSwitchCss = 'span[id="infoFirewall"]'
     this.IMAPSwitchCss = 'span[id="infoImap"]'
+    this.SMTPSwitchCss = 'span[id="infoSmtp"]'
     this.switchStateOff = 'switchoff2'
     this.switchStateOn = 'switchon2'
     this.clickRetryCount = 2
@@ -35,26 +36,29 @@ module.exports = class SettingsPage {
     )
   }
 
-  async disableFirewall() {
+  async checkSettingsSwitch({
+    switchName,
+    swithcSelector,
+    desiredStateName,
+    desiredStateAttribute
+  }) {
     await this.page.goto('https://poczta.onet.pl/ustawienia/')
 
-    const status = await this.getAttribute(this.firewallSwitchCss, 'class')
+    const status = await this.getAttribute(swithcSelector, 'class')
 
-    if (status === this.switchStateOn) {
+    if (status !== desiredStateAttribute) {
       for (let i = 0; i < this.clickRetryCount + 1; i++) {
-        await this.click(this.firewallSwitchCss)
-        console.log(`   * Firewall switch clicked, attempt: ${i + 1}`)
+        await this.click(swithcSelector)
+        console.log(`   * ${switchName} switch clicked, attempt: ${i + 1}`)
 
         await this.page.reload()
         await this.sleep(i * 1000)
 
-        const newStatus = await this.getAttribute(
-          this.firewallSwitchCss,
-          'class'
-        )
-        if (newStatus === this.switchStateOn) {
+        const newStatus = await this.getAttribute(swithcSelector, 'class')
+
+        if (newStatus !== desiredStateAttribute) {
           if (i >= this.clickRetryCount) {
-            throw new Error('   * Firewall disabling failed!')
+            return 'error: Too many attempts'
           } else {
             continue
           }
@@ -62,31 +66,34 @@ module.exports = class SettingsPage {
         break
       }
     }
+
+    return desiredStateName
+  }
+
+  async disableFirewall() {
+    await this.checkSettingsSwitch({
+      switchName: 'Firewall',
+      desiredStateName: 'off',
+      swithcSelector: this.firewallSwitchCss,
+      desiredStateAttribute: this.switchStateOff
+    })
   }
 
   async enableIMAP() {
-    await this.page.goto('https://poczta.onet.pl/ustawienia/')
+    await this.checkSettingsSwitch({
+      switchName: 'IMAP',
+      desiredStateName: 'on',
+      swithcSelector: this.IMAPSwitchCss,
+      desiredStateAttribute: this.switchStateOn
+    })
+  }
 
-    const status = await this.getAttribute(this.IMAPSwitchCss, 'class')
-
-    if (status === this.switchStateOff) {
-      for (let i = 0; i < this.clickRetryCount + 1; i++) {
-        await this.click(this.IMAPSwitchCss)
-        console.log(`   * IMAP switch clicked, attempt: ${i + 1}`)
-
-        await this.page.reload()
-        await this.sleep(i * 1000)
-
-        const newStatus = await this.getAttribute(this.IMAPSwitchCss, 'class')
-        if (newStatus === this.switchStateOff) {
-          if (i >= this.clickRetryCount) {
-            throw new Error('   * IMAP enabling failed!')
-          } else {
-            continue
-          }
-        }
-        break
-      }
-    }
+  async enableSMTP() {
+    await this.checkSettingsSwitch({
+      switchName: 'SMTP',
+      desiredStateName: 'on',
+      swithcSelector: this.SMTPSwitchCss,
+      desiredStateAttribute: this.switchStateOn
+    })
   }
 }

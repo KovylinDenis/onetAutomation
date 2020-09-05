@@ -2,7 +2,7 @@ const path = require('path')
 const puppeteer = require('puppeteer')
 const {LoginPage, SettingsPage} = require(path.resolve('src', 'pages'))
 
-const disableFirewallForUser = async ({user}) => {
+const processUser = async ({user}) => {
   let browser
   try {
     if (process.env.PUPPETEER_EXEC_PATH === undefined) {
@@ -34,20 +34,25 @@ const disableFirewallForUser = async ({user}) => {
     console.log('   * Login passed')
 
     if (user.imap !== 'on') {
-      await settingsPage.enableIMAP()
+      const status = await settingsPage.enableIMAP()
       console.log('   * IMAP enabled')
-      user.imap = 'on'
+      user.imap = status
     } else {
       console.log('   * IMAP already enabled')
     }
 
-    await settingsPage.disableFirewall()
-    console.log('   * Firewall disabled')
-    user.firewall = 'off'
+    if (user.firewall !== 'off') {
+      const status = await settingsPage.disableFirewall()
+      console.log('   * Firewall disabled')
+      user.firewall = status
+    } else {
+      console.log('   * Firewall already enabled')
+    }
   } catch (error) {
     console.log('   * ERROR! Reason:')
     console.log(error)
     user.firewall = 'error: ' + error
+    user.imap = 'error'
   } finally {
     await browser.close()
   }
@@ -55,4 +60,4 @@ const disableFirewallForUser = async ({user}) => {
   return user
 }
 
-module.exports = {disableFirewallForUser}
+module.exports = {processUser}
