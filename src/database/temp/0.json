@@ -2,6 +2,7 @@
   {
     "email": "ilze.ekzemplyarskaya243@cyberia.pl",
     "password": "Ut8al4oZQY6W",
-    "firewall": "error: Error: Node is either not visible or not an HTMLElement"
+    "firewall": "off",
+    "imap": "on"
   }
 ]
