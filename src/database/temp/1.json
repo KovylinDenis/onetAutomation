@@ -1,14 +1,20 @@
 [
   {
     "email": "oksana-ardasenova609@op.pl",
-    "password": "fi0DxZ3YBSX9HP1YK"
+    "password": "fi0DxZ3YBSX9HP1YK",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "dina_okulova123@onet.pl",
-    "password": "8ou52tKJXKJPJ49o4"
+    "password": "8ou52tKJXKJPJ49o4",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "linda.bebikhova785@op.pl",
-    "password": "LksWlsGD50ta"
+    "password": "LksWlsGD50ta",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
