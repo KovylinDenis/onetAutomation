@@ -1,6 +1,8 @@
 [
   {
     "email": "varvara-vaninskaya730@onet.pl",
-    "password": "ivuf9H9V0El"
+    "password": "ivuf9H9V0El",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
