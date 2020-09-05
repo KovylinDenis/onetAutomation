@@ -1,6 +1,8 @@
 [
   {
     "email": "evfrosinya-aczepaeva651@opoczta.pl",
-    "password": "gV8ph4nFY14"
+    "password": "gV8ph4nFY14",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
