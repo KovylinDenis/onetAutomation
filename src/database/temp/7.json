@@ -1,6 +1,8 @@
 [
   {
     "email": "yaroslava_bakarinczeva943@cyberia.pl",
-    "password": "oQuvwBw0N3uHb"
+    "password": "oQuvwBw0N3uHb",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
