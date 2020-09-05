@@ -1,6 +1,8 @@
 [
   {
     "email": "dajna-ostapyuka363@spoko.pl",
-    "password": "p53YhPyhzcogd"
+    "password": "p53YhPyhzcogd",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
