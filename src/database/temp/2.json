@@ -1,6 +1,8 @@
 [
   {
     "email": "lyubomira-draniczyna582@pseudonim.pl",
-    "password": "HC3DbUJD054bZ"
+    "password": "HC3DbUJD054bZ",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
