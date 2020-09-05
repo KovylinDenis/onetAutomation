@@ -37,7 +37,7 @@ jobs:
           CI: 'true'
           DATABASE_PART: 0
         with:
-          args: npm run processAccounts
+          args: sh ./src/sh/setupProcess.sh
 
       - name: Commit
         if: ${{ always() }}
@@ -58,7 +58,7 @@ jobs:
           CI: 'true'
           DATABASE_PART: 1
         with:
-          args: npm run processAccounts
+          args: sh ./src/sh/setupProcess.sh
 
       - name: Commit
         if: ${{ always() }}
@@ -79,7 +79,7 @@ jobs:
           CI: 'true'
           DATABASE_PART: 2
         with:
-          args: npm run processAccounts
+          args: sh ./src/sh/setupProcess.sh
 
       - name: Commit
         if: ${{ always() }}
@@ -100,7 +100,7 @@ jobs:
           CI: 'true'
           DATABASE_PART: 3
         with:
-          args: npm run processAccounts
+          args: sh ./src/sh/setupProcess.sh
 
       - name: Commit
         if: ${{ always() }}
@@ -121,7 +121,7 @@ jobs:
           CI: 'true'
           DATABASE_PART: 4
         with:
-          args: npm run processAccounts
+          args: sh ./src/sh/setupProcess.sh
 
       - name: Commit
         if: ${{ always() }}
@@ -142,7 +142,7 @@ jobs:
           CI: 'true'
           DATABASE_PART: 5
         with:
-          args: npm run processAccounts
+          args: sh ./src/sh/setupProcess.sh
 
       - name: Commit
         if: ${{ always() }}
@@ -163,7 +163,7 @@ jobs:
           CI: 'true'
           DATABASE_PART: 6
         with:
-          args: npm run processAccounts
+          args: sh ./src/sh/setupProcess.sh
 
       - name: Commit
         if: ${{ always() }}
@@ -184,7 +184,7 @@ jobs:
           CI: 'true'
           DATABASE_PART: 7
         with:
-          args: npm run processAccounts
+          args: sh ./src/sh/setupProcess.sh
 
       - name: Commit
         if: ${{ always() }}
@@ -205,7 +205,7 @@ jobs:
           CI: 'true'
           DATABASE_PART: 8
         with:
-          args: npm run processAccounts
+          args: sh ./src/sh/setupProcess.sh
 
       - name: Commit
         if: ${{ always() }}
@@ -226,7 +226,7 @@ jobs:
           CI: 'true'
           DATABASE_PART: 9
         with:
-          args: npm run processAccounts
+          args: sh ./src/sh/setupProcess.sh
 
       - name: Commit
         if: ${{ always() }}
@@ -247,7 +247,7 @@ jobs:
           CI: 'true'
           DATABASE_PART: 10
         with:
-          args: npm run processAccounts
+          args: sh ./src/sh/setupProcess.sh
 
       - name: Commit
         if: ${{ always() }}
@@ -268,7 +268,7 @@ jobs:
           CI: 'true'
           DATABASE_PART: 11
         with:
-          args: npm run processAccounts
+          args: sh ./src/sh/setupProcess.sh
 
       - name: Commit
         if: ${{ always() }}
@@ -289,7 +289,7 @@ jobs:
           CI: 'true'
           DATABASE_PART: 12
         with:
-          args: npm run processAccounts
+          args: sh ./src/sh/setupProcess.sh
 
       - name: Commit
         if: ${{ always() }}
@@ -310,7 +310,7 @@ jobs:
           CI: 'true'
           DATABASE_PART: 13
         with:
-          args: npm run processAccounts
+          args: sh ./src/sh/setupProcess.sh
 
       - name: Commit
         if: ${{ always() }}
@@ -331,7 +331,7 @@ jobs:
           CI: 'true'
           DATABASE_PART: 14
         with:
-          args: npm run processAccounts
+          args: sh ./src/sh/setupProcess.sh
 
       - name: Commit
         if: ${{ always() }}
@@ -364,7 +364,7 @@ jobs:
       - name: Merge Files & Cleanup
         run: |
           npm i
-          npm run mergeAccounts
+          sh ./src/sh/setupMerge.sh
 
       - name: Commit & Merge branches
         if: ${{ always() }}
