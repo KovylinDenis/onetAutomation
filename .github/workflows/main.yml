@@ -41,6 +41,8 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
+        env:
+          DATABASE_PART: 0
         run: sh ./src/sh/commitProcess.sh
 
   job1-processAccounts:
@@ -62,6 +64,8 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
+        env:
+          DATABASE_PART: 1
         run: sh ./src/sh/commitProcess.sh
 
   job2-processAccounts:
@@ -83,6 +87,8 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
+        env:
+          DATABASE_PART: 2
         run: sh ./src/sh/commitProcess.sh
 
   job3-processAccounts:
@@ -104,6 +110,8 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
+        env:
+          DATABASE_PART: 3
         run: sh ./src/sh/commitProcess.sh
 
   job4-processAccounts:
@@ -125,6 +133,8 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
+        env:
+          DATABASE_PART: 4
         run: sh ./src/sh/commitProcess.sh
 
   job5-processAccounts:
@@ -146,6 +156,8 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
+        env:
+          DATABASE_PART: 5
         run: sh ./src/sh/commitProcess.sh
 
   job6-processAccounts:
@@ -167,6 +179,8 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
+        env:
+          DATABASE_PART: 6
         run: sh ./src/sh/commitProcess.sh
 
   job7-processAccounts:
@@ -188,6 +202,8 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
+        env:
+          DATABASE_PART: 7
         run: sh ./src/sh/commitProcess.sh
 
   job8-processAccounts:
@@ -209,6 +225,8 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
+        env:
+          DATABASE_PART: 8
         run: sh ./src/sh/commitProcess.sh
 
   job9-processAccounts:
@@ -230,6 +248,8 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
+        env:
+          DATABASE_PART: 9
         run: sh ./src/sh/commitProcess.sh
 
   job10-processAccounts:
@@ -251,6 +271,8 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
+        env:
+          DATABASE_PART: 10
         run: sh ./src/sh/commitProcess.sh
 
   job11-processAccounts:
@@ -272,6 +294,8 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
+        env:
+          DATABASE_PART: 11
         run: sh ./src/sh/commitProcess.sh
 
   job12-processAccounts:
@@ -293,6 +317,8 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
+        env:
+          DATABASE_PART: 12
         run: sh ./src/sh/commitProcess.sh
 
   job13-processAccounts:
@@ -314,6 +340,8 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
+        env:
+          DATABASE_PART: 13
         run: sh ./src/sh/commitProcess.sh
 
   job14-processAccounts:
@@ -335,6 +363,8 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
+        env:
+          DATABASE_PART: 14
         run: sh ./src/sh/commitProcess.sh
 
   mergeAccounts:
