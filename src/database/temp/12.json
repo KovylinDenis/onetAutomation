@@ -1,6 +1,8 @@
 [
   {
     "email": "sima.slepynina670@onet.pl",
-    "password": "GZEpS0c2Y2k8gwG"
+    "password": "GZEpS0c2Y2k8gwG",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
