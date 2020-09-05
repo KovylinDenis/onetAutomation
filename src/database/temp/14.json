@@ -1,46 +1,68 @@
 [
   {
     "email": "alyona_gantimurova011@opoczta.pl",
-    "password": "6HV7nDjZ7yOt"
+    "password": "6HV7nDjZ7yOt",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "mirdza.gukezheva971@vp.pl",
-    "password": "m19wY4ChBp2rp"
+    "password": "m19wY4ChBp2rp",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "ada_nutrikhina954@adres.pl",
-    "password": "06pg8Fsl4Ra"
+    "password": "06pg8Fsl4Ra",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "gera-karpyuka755@opoczta.pl",
-    "password": "1gWrNox8Nn0jL"
+    "password": "1gWrNox8Nn0jL",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "milana_nesmeyanova660@autograf.pl",
-    "password": "6Y4jlfJO2G1o"
+    "password": "6Y4jlfJO2G1o",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "svetlana.yanchevskaya526@cyberia.pl",
-    "password": "nP92UJqer7T"
+    "password": "nP92UJqer7T",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "ruslana-pervak011@adres.pl",
-    "password": "IfwGo4Ip5GIos"
+    "password": "IfwGo4Ip5GIos",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "milena.filaretova224@op.pl",
-    "password": "gXLxEBk12H70DO"
+    "password": "gXLxEBk12H70DO",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "agniya.zhalkovskaya273@op.pl",
-    "password": "2pbR7S7CXOqq3MQG2"
+    "password": "2pbR7S7CXOqq3MQG2",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "muza-dolzhenko358@adres.pl",
-    "password": "w5w8heR7GrMy2j"
+    "password": "w5w8heR7GrMy2j",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "evfrosinya_pedicha417@onet.pl",
-    "password": "aXO1I95NM3p8vOTr"
+    "password": "aXO1I95NM3p8vOTr",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
