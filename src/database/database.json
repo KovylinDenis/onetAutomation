@@ -22574,7 +22574,8 @@
   {
     "email": "ilze.ekzemplyarskaya243@cyberia.pl",
     "password": "Ut8al4oZQY6W",
-    "firewall": "error: Error: Node is either not visible or not an HTMLElement"
+    "firewall": "off",
+    "imap": "on"
   },
   {
     "email": "anita_dozorczeva001@adres.pl",
@@ -25318,7 +25319,9 @@
   },
   {
     "email": "kamilla.kiryanova732@opoczta.pl",
-    "password": "OZD8vM9RUypl7u"
+    "password": "OZD8vM9RUypl7u",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "irshulya.alatyreva004@pseudonim.pl",
@@ -25461,7 +25464,8 @@
   {
     "email": "dominika.biryuchkova645@autograf.pl",
     "password": "O0OLMoWOAR1LS14",
-    "firewall": "error: TimeoutError: waiting for function failed: timeout 30000ms exceeded"
+    "firewall": "off",
+    "imap": "on"
   },
   {
     "email": "milena_lipiczkaya293@adres.pl",
@@ -25764,7 +25768,9 @@
   },
   {
     "email": "veta_mukhametshina343@vp.pl",
-    "password": "6rz9Z604P37vIu4m"
+    "password": "6rz9Z604P37vIu4m",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "kseniya.yamanova808@adres.pl",
@@ -25815,7 +25821,9 @@
   },
   {
     "email": "rozaliya.kolbasova031@onet.pl",
-    "password": "j3NPp8igNJuVxsbw9"
+    "password": "j3NPp8igNJuVxsbw9",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "polina_lyubimova143@cyberia.pl",
@@ -26047,7 +26055,9 @@
   },
   {
     "email": "akulina_sulimova245@onet.pl",
-    "password": "9YbEqvY2fK1nO"
+    "password": "9YbEqvY2fK1nO",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "manuela_nabojchenko075@onet.pl",
@@ -26240,7 +26250,9 @@
   },
   {
     "email": "nadezhda_ejlera048@adres.pl",
-    "password": "z4QL5BXJ5wjq5PR"
+    "password": "z4QL5BXJ5wjq5PR",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "valeriya_karmokova770@adres.pl",
@@ -26364,7 +26376,9 @@
   },
   {
     "email": "mirra_budekina279@spoko.pl",
-    "password": "mryToFt7CPEnZ"
+    "password": "mryToFt7CPEnZ",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "debora.dubinskaya813@op.pl",
@@ -26398,7 +26412,9 @@
   },
   {
     "email": "varvara-kirkorova811@pseudonim.pl",
-    "password": "89ajUb9q5Cl46"
+    "password": "89ajUb9q5Cl46",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "flora.sholokhova045@vp.pl",
@@ -26444,7 +26460,9 @@
   },
   {
     "email": "severina-mirnova144@onet.pl",
-    "password": "D2K9fnbzhH1vXN"
+    "password": "D2K9fnbzhH1vXN",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "manuela.aseeva278@cyberia.pl",
@@ -26490,7 +26508,9 @@
   },
   {
     "email": "arina.vereshhetina059@vp.pl",
-    "password": "7C0RCYlA6g560t8R"
+    "password": "7C0RCYlA6g560t8R",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "zemfira.batyrbekova520@op.pl",
@@ -26602,7 +26622,9 @@
   },
   {
     "email": "kira.burova973@pseudonim.pl",
-    "password": "RbLvp479EXI9Rm"
+    "password": "RbLvp479EXI9Rm",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "olesya-svetova275@opoczta.pl",
@@ -26684,7 +26706,9 @@
   },
   {
     "email": "kira.skotinina275@spoko.pl",
-    "password": "ObHSOII7e05FY43x0"
+    "password": "ObHSOII7e05FY43x0",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "bozhena_bunina259@spoko.pl",
@@ -26725,7 +26749,8 @@
   {
     "email": "mirra.verbina743@autograf.pl",
     "password": "JCeDkSsxG27eG",
-    "firewall": "error: Error: Node is either not visible or not an HTMLElement"
+    "firewall": "off",
+    "imap": "on"
   },
   {
     "email": "milana-zheltikova970@op.pl",
@@ -26807,7 +26832,9 @@
   },
   {
     "email": "yaroslava_buryakova951@opoczta.pl",
-    "password": "CARI0TcryovlY3LhZ"
+    "password": "CARI0TcryovlY3LhZ",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "oksana.basyrova248@opoczta.pl",
