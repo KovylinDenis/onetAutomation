@@ -1,9 +1,9 @@
 const path = require('path')
-const {
-  searchForAccountsToProcess,
-  rewriteUser,
-  readFileAsync
-} = require(path.resolve('src', 'model', 'utils'))
+const {searchForAccountsToProcess, rewriteUser} = require(path.resolve(
+  'src',
+  'model',
+  'utils'
+))
 const {processUser} = require(path.resolve(
   'src',
   'controller',
@@ -23,7 +23,9 @@ const retries = 4
 const main = async () => {
   const t0 = Date.now()
   for (let retry = 0; retry < retries + 1; retry++) {
-    const users = await searchForAccountsToProcess({databasePath: DATABASE_FILE})
+    const users = await searchForAccountsToProcess({
+      databasePath: DATABASE_FILE
+    })
 
     if (users.length !== 0) {
       const t00 = Date.now()

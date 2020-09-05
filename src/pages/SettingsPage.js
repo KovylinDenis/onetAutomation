@@ -71,7 +71,7 @@ module.exports = class SettingsPage {
   }
 
   async disableFirewall() {
-    await this.checkSettingsSwitch({
+    return await this.checkSettingsSwitch({
       switchName: 'Firewall',
       desiredStateName: 'off',
       swithcSelector: this.firewallSwitchCss,
@@ -80,7 +80,7 @@ module.exports = class SettingsPage {
   }
 
   async enableIMAP() {
-    await this.checkSettingsSwitch({
+    return await this.checkSettingsSwitch({
       switchName: 'IMAP',
       desiredStateName: 'on',
       swithcSelector: this.IMAPSwitchCss,
@@ -89,7 +89,7 @@ module.exports = class SettingsPage {
   }
 
   async enableSMTP() {
-    await this.checkSettingsSwitch({
+    return await this.checkSettingsSwitch({
       switchName: 'SMTP',
       desiredStateName: 'on',
       swithcSelector: this.SMTPSwitchCss,
