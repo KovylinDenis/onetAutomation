@@ -1,6 +1,8 @@
 [
   {
     "email": "karolina-sochevanova857@onet.pl",
-    "password": "0eJ6IP0cvpStfI46"
+    "password": "0eJ6IP0cvpStfI46",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
