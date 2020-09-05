@@ -11,6 +11,7 @@
     "convertEmails": "node ./src/model/parseCredentials.js",
     "splitAccounts": "node ./src/model/splitAccounts.js",
     "processAccounts": "node ./src/model/processAccounts.js",
+    "loopCommit": "node ./src/model/loopCommit.js",
     "mergeAccounts": "node ./src/model/mergeAccounts.js"
   },
   "dependencies": {

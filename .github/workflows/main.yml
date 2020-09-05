@@ -43,7 +43,7 @@ jobs:
         if: ${{ always() }}
         env:
           DATABASE_PART: 0
-        run: sh ./src/sh/commitProcess.sh
+        run: npm run loopCommit
 
   job1-processAccounts:
     runs-on: ubuntu-latest
@@ -66,7 +66,7 @@ jobs:
         if: ${{ always() }}
         env:
           DATABASE_PART: 1
-        run: sh ./src/sh/commitProcess.sh
+        run: npm run loopCommit
 
   job2-processAccounts:
     runs-on: ubuntu-latest
@@ -89,7 +89,7 @@ jobs:
         if: ${{ always() }}
         env:
           DATABASE_PART: 2
-        run: sh ./src/sh/commitProcess.sh
+        run: npm run loopCommit
 
   job3-processAccounts:
     runs-on: ubuntu-latest
@@ -112,7 +112,7 @@ jobs:
         if: ${{ always() }}
         env:
           DATABASE_PART: 3
-        run: sh ./src/sh/commitProcess.sh
+        run: npm run loopCommit
 
   job4-processAccounts:
     runs-on: ubuntu-latest
@@ -135,7 +135,7 @@ jobs:
         if: ${{ always() }}
         env:
           DATABASE_PART: 4
-        run: sh ./src/sh/commitProcess.sh
+        run: npm run loopCommit
 
   job5-processAccounts:
     runs-on: ubuntu-latest
@@ -158,7 +158,7 @@ jobs:
         if: ${{ always() }}
         env:
           DATABASE_PART: 5
-        run: sh ./src/sh/commitProcess.sh
+        run: npm run loopCommit
 
   job6-processAccounts:
     runs-on: ubuntu-latest
@@ -181,7 +181,7 @@ jobs:
         if: ${{ always() }}
         env:
           DATABASE_PART: 6
-        run: sh ./src/sh/commitProcess.sh
+        run: npm run loopCommit
 
   job7-processAccounts:
     runs-on: ubuntu-latest
@@ -204,7 +204,7 @@ jobs:
         if: ${{ always() }}
         env:
           DATABASE_PART: 7
-        run: sh ./src/sh/commitProcess.sh
+        run: npm run loopCommit
 
   job8-processAccounts:
     runs-on: ubuntu-latest
@@ -227,7 +227,7 @@ jobs:
         if: ${{ always() }}
         env:
           DATABASE_PART: 8
-        run: sh ./src/sh/commitProcess.sh
+        run: npm run loopCommit
 
   job9-processAccounts:
     runs-on: ubuntu-latest
@@ -250,7 +250,7 @@ jobs:
         if: ${{ always() }}
         env:
           DATABASE_PART: 9
-        run: sh ./src/sh/commitProcess.sh
+        run: npm run loopCommit
 
   job10-processAccounts:
     runs-on: ubuntu-latest
@@ -273,7 +273,7 @@ jobs:
         if: ${{ always() }}
         env:
           DATABASE_PART: 10
-        run: sh ./src/sh/commitProcess.sh
+        run: npm run loopCommit
 
   job11-processAccounts:
     runs-on: ubuntu-latest
@@ -296,7 +296,7 @@ jobs:
         if: ${{ always() }}
         env:
           DATABASE_PART: 11
-        run: sh ./src/sh/commitProcess.sh
+        run: npm run loopCommit
 
   job12-processAccounts:
     runs-on: ubuntu-latest
@@ -319,7 +319,7 @@ jobs:
         if: ${{ always() }}
         env:
           DATABASE_PART: 12
-        run: sh ./src/sh/commitProcess.sh
+        run: npm run loopCommit
 
   job13-processAccounts:
     runs-on: ubuntu-latest
@@ -342,7 +342,7 @@ jobs:
         if: ${{ always() }}
         env:
           DATABASE_PART: 13
-        run: sh ./src/sh/commitProcess.sh
+        run: npm run loopCommit
 
   job14-processAccounts:
     runs-on: ubuntu-latest
@@ -365,7 +365,7 @@ jobs:
         if: ${{ always() }}
         env:
           DATABASE_PART: 14
-        run: sh ./src/sh/commitProcess.sh
+        run: npm run loopCommit
 
   mergeAccounts:
     if: ${{ always() }}
