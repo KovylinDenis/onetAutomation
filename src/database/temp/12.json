@@ -1,6 +1,8 @@
 [
   {
     "email": "vitalina_shereshevskaya682@adres.pl",
-    "password": "36IYJ1Q8QD4Q0aG2"
+    "password": "36IYJ1Q8QD4Q0aG2",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
