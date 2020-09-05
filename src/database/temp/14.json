@@ -1,10 +1,14 @@
 [
   {
     "email": "valentina_kutorga489@onet.pl",
-    "password": "iY4LGC7u4u0MxKXh"
+    "password": "iY4LGC7u4u0MxKXh",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "debora-golovunina904@onet.eu",
-    "password": "d3aFptSUD1c327TT"
+    "password": "d3aFptSUD1c327TT",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
