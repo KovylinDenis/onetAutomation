@@ -1,7 +1,7 @@
 const util = require('util')
 const exec = util.promisify(require('child_process').exec)
 
-const commitRetries = 6
+const commitRetries = 20
 
 const sleep = async (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms))

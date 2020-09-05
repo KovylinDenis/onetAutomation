@@ -18,7 +18,6 @@ sum=$status$diff
   git config --global rebase.autoStash true
   git add -A; 
   git commit -m "Processed accounts Part $DATABASE_PART"; 
-  git pull --rebase origin "$GITHUB_SHA-branch"; 
+  git pull origin "$GITHUB_SHA-branch"; 
   git push --force origin "$GITHUB_SHA-branch";
-  sleep 3
 #fi
