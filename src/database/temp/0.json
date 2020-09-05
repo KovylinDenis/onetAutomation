@@ -1,6 +1,8 @@
 [
   {
     "email": "monika_aniskina138@autograf.pl",
-    "password": "QsKXwG9XnkSxAEL"
+    "password": "QsKXwG9XnkSxAEL",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
