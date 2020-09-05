@@ -1,14 +1,20 @@
 [
   {
     "email": "yuzefa.dymchikova107@onet.eu",
-    "password": "3BBhE917hlNwASx"
+    "password": "3BBhE917hlNwASx",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "leonida_zalygina417@cyberia.pl",
-    "password": "cT10c6OIV2mm"
+    "password": "cT10c6OIV2mm",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "karolina.belomestnykh020@vp.pl",
-    "password": "Ycd1byPiivmX"
+    "password": "Ycd1byPiivmX",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
