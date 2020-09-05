@@ -28,6 +28,8 @@ const main = async () => {
       }
     }
 
+    console.log('DATABASE_FILE', DATABASE_FILE)
+    console.log('DATABASE_TEMP_FOLDER', DATABASE_TEMP_FOLDER)
     fs.writeFileSync(`${DATABASE_TEMP_FOLDER}${path.sep}${i}.json`, JSON.stringify(partUsers, null, 2))
   }
 }
