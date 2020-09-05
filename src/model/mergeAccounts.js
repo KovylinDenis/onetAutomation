@@ -10,8 +10,7 @@ const main = async () => {
   const mainDatabase = JSON.parse(await readFileAsync(DATABASE_FILE))
 
   for (let i = 0; i < PARTS_COUNT; i++) {
-    const partDatabasePath = path.resolve(DATABASE_TEMP_FOLDER, `${i}.json`)
-    const partDatabase = JSON.parse(await readFileAsync(partDatabasePath))
+    const partDatabase = JSON.parse(await readFileAsync(`${DATABASE_TEMP_FOLDER}${path.sep}${i}.json`))
 
     for (let j = 0; j < partDatabase.length; j++) {
       const index = mainDatabase.findIndex(
