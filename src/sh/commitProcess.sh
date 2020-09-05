@@ -17,6 +17,6 @@ else
   git pull origin; 
   git add -A; 
   git commit -m "Processed accounts Part $DATABASE_PART"; 
-  git push origin "$GITHUB_SHA-branch";
+  git push --force origin "$GITHUB_SHA-branch";
   sleep 3
 fi
