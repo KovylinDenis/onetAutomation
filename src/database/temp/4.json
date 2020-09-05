@@ -1,6 +1,8 @@
 [
   {
     "email": "vladislava_komchatova922@onet.pl",
-    "password": "FNgjSDSjIZ2d"
+    "password": "FNgjSDSjIZ2d",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
