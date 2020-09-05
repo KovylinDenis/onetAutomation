@@ -1,14 +1,20 @@
 [
   {
     "email": "veselina.glushenkova834@opoczta.pl",
-    "password": "i4zy1PxoMFgmim"
+    "password": "i4zy1PxoMFgmim",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "bozhena_adgamova079@onet.pl",
-    "password": "13VLag7fr0P"
+    "password": "13VLag7fr0P",
+    "imap": "on",
+    "firewall": "off"
   },
   {
     "email": "olesya-gruzinskaya033@adres.pl",
-    "password": "618MRTR0a6h8E6Ad"
+    "password": "618MRTR0a6h8E6Ad",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
