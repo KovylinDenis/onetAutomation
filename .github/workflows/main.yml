@@ -20,7 +20,7 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
-        run: if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.name "github-actions[bot]"; git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"; git pull origin; git stash; git checkout -b "$GITHUB_SHA-branch"; git stash pop; git add -A; git commit -m "Splited accounts"; git push origin "$GITHUB_SHA-branch"; fi
+        run: sh ./src/sh/commitSplit.sh
 
   job0-processAccounts:
     runs-on: ubuntu-latest
@@ -40,7 +40,7 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
-        run: if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.name "github-actions[bot]"; git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"; git pull origin; git stash; git checkout -b "$GITHUB_SHA-branch"; git stash pop; git add -A; git commit -m "Processed accounts №0"; git push origin "$GITHUB_SHA-branch"; fi
+        run: sh ./src/sh/commitProcess.sh
 
   job1-processAccounts:
     runs-on: ubuntu-latest
@@ -60,7 +60,7 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
-        run: if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.name "github-actions[bot]"; git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"; git pull origin; git stash; git checkout -b "$GITHUB_SHA-branch"; git stash pop; git add -A; git commit -m "Processed accounts №1"; git push origin "$GITHUB_SHA-branch"; fi
+        run: sh ./src/sh/commitProcess.sh
 
   job2-processAccounts:
     runs-on: ubuntu-latest
@@ -80,7 +80,7 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
-        run: if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.name "github-actions[bot]"; git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"; git pull origin; git stash; git checkout -b "$GITHUB_SHA-branch"; git stash pop; git add -A; git commit -m "Processed accounts №2"; git push origin "$GITHUB_SHA-branch"; fi
+        run: sh ./src/sh/commitProcess.sh
 
   job3-processAccounts:
     runs-on: ubuntu-latest
@@ -100,7 +100,7 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
-        run: if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.name "github-actions[bot]"; git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"; git pull origin; git stash; git checkout -b "$GITHUB_SHA-branch"; git stash pop; git add -A; git commit -m "Processed accounts №3"; git push origin "$GITHUB_SHA-branch"; fi
+        run: sh ./src/sh/commitProcess.sh
 
   job4-processAccounts:
     runs-on: ubuntu-latest
@@ -120,7 +120,7 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
-        run: if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.name "github-actions[bot]"; git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"; git pull origin; git stash; git checkout -b "$GITHUB_SHA-branch"; git stash pop; git add -A; git commit -m "Processed accounts №4"; git push origin "$GITHUB_SHA-branch"; fi
+        run: sh ./src/sh/commitProcess.sh
 
   job5-processAccounts:
     runs-on: ubuntu-latest
@@ -140,7 +140,7 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
-        run: if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.name "github-actions[bot]"; git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"; git pull origin; git stash; git checkout -b "$GITHUB_SHA-branch"; git stash pop; git add -A; git commit -m "Processed accounts №5"; git push origin "$GITHUB_SHA-branch"; fi
+        run: sh ./src/sh/commitProcess.sh
 
   job6-processAccounts:
     runs-on: ubuntu-latest
@@ -160,7 +160,7 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
-        run: if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.name "github-actions[bot]"; git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"; git pull origin; git stash; git checkout -b "$GITHUB_SHA-branch"; git stash pop; git add -A; git commit -m "Processed accounts №6"; git push origin "$GITHUB_SHA-branch"; fi
+        run: sh ./src/sh/commitProcess.sh
 
   job7-processAccounts:
     runs-on: ubuntu-latest
@@ -180,7 +180,7 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
-        run: if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.name "github-actions[bot]"; git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"; git pull origin; git stash; git checkout -b "$GITHUB_SHA-branch"; git stash pop; git add -A; git commit -m "Processed accounts №7"; git push origin "$GITHUB_SHA-branch"; fi
+        run: sh ./src/sh/commitProcess.sh
 
   job8-processAccounts:
     runs-on: ubuntu-latest
@@ -200,7 +200,7 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
-        run: if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.name "github-actions[bot]"; git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"; git pull origin; git stash; git checkout -b "$GITHUB_SHA-branch"; git stash pop; git add -A; git commit -m "Processed accounts №8"; git push origin "$GITHUB_SHA-branch"; fi
+        run: sh ./src/sh/commitProcess.sh
 
   job9-processAccounts:
     runs-on: ubuntu-latest
@@ -220,7 +220,7 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
-        run: if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.name "github-actions[bot]"; git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"; git pull origin; git stash; git checkout -b "$GITHUB_SHA-branch"; git stash pop; git add -A; git commit -m "Processed accounts №9"; git push origin "$GITHUB_SHA-branch"; fi
+        run: sh ./src/sh/commitProcess.sh
 
   job10-processAccounts:
     runs-on: ubuntu-latest
@@ -240,7 +240,7 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
-        run: if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.name "github-actions[bot]"; git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"; git pull origin; git stash; git checkout -b "$GITHUB_SHA-branch"; git stash pop; git add -A; git commit -m "Processed accounts №10"; git push origin "$GITHUB_SHA-branch"; fi
+        run: sh ./src/sh/commitProcess.sh
 
   job11-processAccounts:
     runs-on: ubuntu-latest
@@ -260,7 +260,7 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
-        run: if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.name "github-actions[bot]"; git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"; git pull origin; git stash; git checkout -b "$GITHUB_SHA-branch"; git stash pop; git add -A; git commit -m "Processed accounts №11"; git push origin "$GITHUB_SHA-branch"; fi
+        run: sh ./src/sh/commitProcess.sh
 
   job12-processAccounts:
     runs-on: ubuntu-latest
@@ -280,7 +280,7 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
-        run: if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.name "github-actions[bot]"; git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"; git pull origin; git stash; git checkout -b "$GITHUB_SHA-branch"; git stash pop; git add -A; git commit -m "Processed accounts №12"; git push origin "$GITHUB_SHA-branch"; fi
+        run: sh ./src/sh/commitProcess.sh
 
   job13-processAccounts:
     runs-on: ubuntu-latest
@@ -300,7 +300,7 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
-        run: if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.name "github-actions[bot]"; git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"; git pull origin; git stash; git checkout -b "$GITHUB_SHA-branch"; git stash pop; git add -A; git commit -m "Processed accounts №13"; git push origin "$GITHUB_SHA-branch"; fi
+        run: sh ./src/sh/commitProcess.sh
 
   job14-processAccounts:
     runs-on: ubuntu-latest
@@ -320,7 +320,7 @@ jobs:
 
       - name: Commit
         if: ${{ always() }}
-        run: if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.name "github-actions[bot]"; git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"; git pull origin; git stash; git checkout -b "$GITHUB_SHA-branch"; git stash pop; git add -A; git commit -m "Processed accounts №14"; git push origin "$GITHUB_SHA-branch"; fi
+        run: sh ./src/sh/commitProcess.sh
 
   mergeAccounts:
     runs-on: ubuntu-latest
@@ -353,4 +353,4 @@ jobs:
 
       - name: Commit & Merge branches
         if: ${{ always() }}
-        run: if [ -z "$(git diff --exit-code)" ]; then echo "Nothing to commit"; exit 0; else git config --global user.name "github-actions[bot]"; git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"; git pull origin; git stash; git checkout -b "$GITHUB_SHA-branch"; git stash pop; git add -A; git commit -m "Cleanup"; git push origin "$GITHUB_SHA-branch"; git checkout master; git merge "$GITHUB_SHA-branch"; git push origin master fi
+        run: sh ./src/sh/commitMerge.sh 
