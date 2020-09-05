@@ -27,9 +27,9 @@ const main = async () => {
         partUsers.push(allUsers[j])
       }
     }
-    const partFilePath = path.resolve(__dirname, '..', 'database', 'temp')
+    const databasePath = path.resolve(DATABASE_TEMP_FOLDER, `${i}.json`)
 
-    await fs.writeFile(`${partFilePath}${path.sep}${i}.json`, JSON.stringify(partUsers, null, 2))
+    await fs.writeFile(databasePath, JSON.stringify(partUsers, null, 2))
   }
 }
 

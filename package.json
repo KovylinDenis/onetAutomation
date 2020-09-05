@@ -11,8 +11,7 @@
     "convertEmails": "node ./src/model/parseCredentials.js",
     "splitAccounts": "node ./src/model/splitAccounts.js",
     "processAccounts": "node ./src/model/processAccounts.js",
-    "mergeAccounts": "node ./src/model/mergeAccounts.js",
-    "tempCleanup": "rm -v ./src/database/temp/*"
+    "mergeAccounts": "node ./src/model/mergeAccounts.js"
   },
   "dependencies": {
     "puppeteer": "^5.0.0",
