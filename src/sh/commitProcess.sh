@@ -4,8 +4,8 @@ diff="$(git diff master origin/master)"
 sum=$status$diff
 #if [ -z "$sum" ]
 #then 
-  echo "Nothing to commit or push after processing"; 
-  exit 0; 
+#  echo "Nothing to commit or push after processing"; 
+#  exit 0; 
 #else       
   echo "status: '$status'"
   echo "diff: '$diff'"
