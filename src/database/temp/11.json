@@ -1,6 +1,8 @@
 [
   {
     "email": "debora-goryukhina789@vp.pl",
-    "password": "ClP6P13g0MlA6yzi"
+    "password": "ClP6P13g0MlA6yzi",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
