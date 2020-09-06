@@ -1,6 +1,8 @@
 [
   {
     "email": "hristina.shareczkaya713@cyberia.pl",
-    "password": "gCgREig3bWnH72z"
+    "password": "gCgREig3bWnH72z",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
