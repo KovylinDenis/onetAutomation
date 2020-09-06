@@ -3,7 +3,8 @@
     "email": "seoblowmasku1983@onet.eu",
     "password": "Is06G7hvhJ",
     "imap": "on",
-    "firewall": "off"
+    "firewall": "off",
+    "smtp": "on"
   },
   {
     "email": "tatallmissvo1986@onet.eu",

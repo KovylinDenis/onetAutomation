@@ -41,6 +41,14 @@ const processUser = async ({user}) => {
       console.log('   * IMAP already enabled')
     }
 
+    if (user.smtp !== 'on') {
+      const status = await settingsPage.enableSMTP()
+      console.log('   * SMTP enabled')
+      user.smtp = status
+    } else {
+      console.log('   * SMTP already enabled')
+    }
+
     if (user.firewall !== 'off') {
       const status = await settingsPage.disableFirewall()
       console.log('   * Firewall disabled')
@@ -53,6 +61,7 @@ const processUser = async ({user}) => {
     console.log(error)
     user.firewall = 'error: ' + error
     user.imap = 'error'
+    user.smtp = 'error'
   } finally {
     await browser.close()
   }

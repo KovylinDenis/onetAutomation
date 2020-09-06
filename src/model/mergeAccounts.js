@@ -26,7 +26,7 @@ const main = async () => {
         (element) => element.email === partArtifactDatabase[j].email
       )
       console.log(`Part: ${i}. PartUser ${j}`)
-      console.log(partArtifactDatabase)
+      console.log(partArtifactDatabase[j])
       mainDatabase[index] = partArtifactDatabase[j]
     }
 

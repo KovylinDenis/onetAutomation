@@ -7,7 +7,11 @@ const searchForAccountsToProcess = async ({databasePath}) => {
   const usersToProcess = []
 
   for (let i = 0; i < database.length; i++) {
-    if (database[i].firewall !== 'off' || database[i].imap !== 'on') {
+    if (
+      database[i].firewall !== 'off' ||
+      database[i].imap !== 'on' ||
+      database[i].smtp !== 'on'
+    ) {
       usersToProcess.push(database[i])
     }
   }
