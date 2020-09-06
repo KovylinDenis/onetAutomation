@@ -1,6 +1,8 @@
 [
   {
     "email": "alana_agapova842@onet.eu",
-    "password": "pD1N79tkdgnKwJo"
+    "password": "pD1N79tkdgnKwJo",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
