@@ -1,6 +1,8 @@
 [
   {
     "email": "mirra-yanushkevich734@autograf.pl",
-    "password": "GHotau2F5p1I4kj8"
+    "password": "GHotau2F5p1I4kj8",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
