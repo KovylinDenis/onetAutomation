@@ -1,6 +1,8 @@
 [
   {
     "email": "vida_buturlakina803@vp.pl",
-    "password": "Ay0pyQVC1d9"
+    "password": "Ay0pyQVC1d9",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
