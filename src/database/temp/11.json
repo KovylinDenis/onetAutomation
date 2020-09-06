@@ -1,6 +1,8 @@
 [
   {
     "email": "galina-studenikina428@cyberia.pl",
-    "password": "ch0c3T2lHsli5y"
+    "password": "ch0c3T2lHsli5y",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
