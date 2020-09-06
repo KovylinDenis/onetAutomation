@@ -1,6 +1,8 @@
 [
   {
     "email": "kazimira-kolodyazhnaya809@spoko.pl",
-    "password": "DTrlf9SKvDyeYyIMY"
+    "password": "DTrlf9SKvDyeYyIMY",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
