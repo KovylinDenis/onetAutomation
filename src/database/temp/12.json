@@ -1,6 +1,8 @@
 [
   {
     "email": "sima-ebzeeva954@spoko.pl",
-    "password": "1eMZ0y8w6KBE"
+    "password": "1eMZ0y8w6KBE",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
