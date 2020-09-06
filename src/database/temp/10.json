@@ -1,6 +1,8 @@
 [
   {
     "email": "ustina-novoselczeva634@opoczta.pl",
-    "password": "3bXr3a4COrDjE"
+    "password": "3bXr3a4COrDjE",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
