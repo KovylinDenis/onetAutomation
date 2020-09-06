@@ -1,6 +1,8 @@
 [
   {
     "email": "taisiya.glinchevskaya500@op.pl",
-    "password": "7I7A9iax483"
+    "password": "7I7A9iax483",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
