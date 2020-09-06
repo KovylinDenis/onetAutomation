@@ -1,6 +1,8 @@
 [
   {
     "email": "iya.rastorgueva832@op.pl",
-    "password": "FKZ8n36kK0IEd5"
+    "password": "FKZ8n36kK0IEd5",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
