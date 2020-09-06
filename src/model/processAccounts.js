@@ -32,16 +32,21 @@ const main = async () => {
       console.log(`${users.length} users were found for ${retry} retry`)
 
       for (let i = 0; i < users.length; i++) {
-        console.log(`Loop: ${retry} Index: ${i} User : ${users[i].email}`)
+        console.log(
+          `Loop: ${retry} Index: ${i} of ${users.length - 1} User: ${
+            users[i].email
+          }`
+        )
         users[i] = await processUser({user: users[i]})
         await rewriteUser({user: users[i], databasePath: DATABASE_FILE})
         console.log('   * All done for this user')
       }
 
       const t11 = Date.now()
+      const timePassed = (t11 - t00) / 1000
+      const averagePerUser = Math.round((timePassed / users.length) * 100) / 100
       console.log(
-        `Done! Time passed for ${retry} iteration: ${(t11 - t00) /
-          1000} seconds`
+        `Done! Time passed for ${retry} iteration: ${timePassed} seconds. Average per user is: ${averagePerUser}`
       )
       continue
     }
