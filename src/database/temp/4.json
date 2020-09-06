@@ -1,6 +1,8 @@
 [
   {
     "email": "diodora-nilina712@pseudonim.pl",
-    "password": "d3jcrz4RQAuF2KmhR"
+    "password": "d3jcrz4RQAuF2KmhR",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
