@@ -1,6 +1,8 @@
 [
   {
     "email": "ellada_kurakova560@cyberia.pl",
-    "password": "48u7ZUfZeT8"
+    "password": "48u7ZUfZeT8",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
