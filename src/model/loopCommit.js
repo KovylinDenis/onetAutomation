@@ -11,12 +11,13 @@ const main = async () => {
   for (let i = 0; i < commitRetries; i++) {
     try {
       const {stdout, stderr} = await exec('sh ./src/sh/commitProcess.sh')
+      console.log(`Commit attempt ${i}`)
       console.log('stdout:', stdout)
       console.log('stderr:', stderr)
     } catch (err) {
       console.error(err)
     }
-    await sleep(1000 + Math.floor(Math.random() * Math.floor(5000)))
+    await sleep(3000 + Math.floor(Math.random() * Math.floor(15000)))
   }
 }
 
