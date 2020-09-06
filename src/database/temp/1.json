@@ -1,6 +1,8 @@
 [
   {
     "email": "bella.fedyaeva893@spoko.pl",
-    "password": "Pu6skp17AG7P1u"
+    "password": "Pu6skp17AG7P1u",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
