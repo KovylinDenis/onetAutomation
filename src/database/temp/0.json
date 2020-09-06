@@ -1,6 +1,8 @@
 [
   {
     "email": "danuta_voishheva199@pseudonim.pl",
-    "password": "BBNa8pGn8W4B5muC"
+    "password": "BBNa8pGn8W4B5muC",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
