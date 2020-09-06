@@ -1,6 +1,8 @@
 [
   {
     "email": "inna-batenkova812@autograf.pl",
-    "password": "sDYC2E5cB8T3l"
+    "password": "sDYC2E5cB8T3l",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
