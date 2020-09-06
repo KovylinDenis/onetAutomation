@@ -39,11 +39,12 @@ jobs:
         with:
           args: sh ./src/sh/setupProcess.sh
 
-      - name: Commit
+      - name: Create partial artifact
         if: ${{ always() }}
-        env:
-          DATABASE_PART: 0
-        run: npm run loopCommit
+        uses: actions/upload-artifact@v2
+        with:
+          name: temp-artifact-processed-0
+          path: src/database/temp/0.json
 
   job1-processAccounts:
     runs-on: ubuntu-latest
@@ -62,11 +63,12 @@ jobs:
         with:
           args: sh ./src/sh/setupProcess.sh
 
-      - name: Commit
+      - name: Create partial artifact
         if: ${{ always() }}
-        env:
-          DATABASE_PART: 1
-        run: npm run loopCommit
+        uses: actions/upload-artifact@v2
+        with:
+          name: temp-artifact-processed-1
+          path: src/database/temp/1.json
 
   job2-processAccounts:
     runs-on: ubuntu-latest
@@ -85,11 +87,12 @@ jobs:
         with:
           args: sh ./src/sh/setupProcess.sh
 
-      - name: Commit
+      - name: Create partial artifact
         if: ${{ always() }}
-        env:
-          DATABASE_PART: 2
-        run: npm run loopCommit
+        uses: actions/upload-artifact@v2
+        with:
+          name: temp-artifact-processed-2
+          path: src/database/temp/2.json
 
   job3-processAccounts:
     runs-on: ubuntu-latest
@@ -108,11 +111,13 @@ jobs:
         with:
           args: sh ./src/sh/setupProcess.sh
 
-      - name: Commit
+      - name: Create partial artifact
         if: ${{ always() }}
-        env:
-          DATABASE_PART: 3
-        run: npm run loopCommit
+        uses: actions/upload-artifact@v2
+        with:
+          name: temp-artifact-processed-3
+          path: src/database/temp/3.json
+
 
   job4-processAccounts:
     runs-on: ubuntu-latest
@@ -131,11 +136,12 @@ jobs:
         with:
           args: sh ./src/sh/setupProcess.sh
 
-      - name: Commit
+      - name: Create partial artifact
         if: ${{ always() }}
-        env:
-          DATABASE_PART: 4
-        run: npm run loopCommit
+        uses: actions/upload-artifact@v2
+        with:
+          name: temp-artifact-processed-4
+          path: src/database/temp/4.json
 
   job5-processAccounts:
     runs-on: ubuntu-latest
@@ -154,11 +160,12 @@ jobs:
         with:
           args: sh ./src/sh/setupProcess.sh
 
-      - name: Commit
+      - name: Create partial artifact
         if: ${{ always() }}
-        env:
-          DATABASE_PART: 5
-        run: npm run loopCommit
+        uses: actions/upload-artifact@v2
+        with:
+          name: temp-artifact-processed-5
+          path: src/database/temp/5.json
 
   job6-processAccounts:
     runs-on: ubuntu-latest
@@ -177,11 +184,12 @@ jobs:
         with:
           args: sh ./src/sh/setupProcess.sh
 
-      - name: Commit
+      - name: Create partial artifact
         if: ${{ always() }}
-        env:
-          DATABASE_PART: 6
-        run: npm run loopCommit
+        uses: actions/upload-artifact@v2
+        with:
+          name: temp-artifact-processed-6
+          path: src/database/temp/6.json
 
   job7-processAccounts:
     runs-on: ubuntu-latest
@@ -200,11 +208,12 @@ jobs:
         with:
           args: sh ./src/sh/setupProcess.sh
 
-      - name: Commit
+      - name: Create partial artifact
         if: ${{ always() }}
-        env:
-          DATABASE_PART: 7
-        run: npm run loopCommit
+        uses: actions/upload-artifact@v2
+        with:
+          name: temp-artifact-processed-7
+          path: src/database/temp/7.json
 
   job8-processAccounts:
     runs-on: ubuntu-latest
@@ -223,11 +232,12 @@ jobs:
         with:
           args: sh ./src/sh/setupProcess.sh
 
-      - name: Commit
+      - name: Create partial artifact
         if: ${{ always() }}
-        env:
-          DATABASE_PART: 8
-        run: npm run loopCommit
+        uses: actions/upload-artifact@v2
+        with:
+          name: temp-artifact-processed-8
+          path: src/database/temp/8.json
 
   job9-processAccounts:
     runs-on: ubuntu-latest
@@ -246,11 +256,12 @@ jobs:
         with:
           args: sh ./src/sh/setupProcess.sh
 
-      - name: Commit
+      - name: Create partial artifact
         if: ${{ always() }}
-        env:
-          DATABASE_PART: 9
-        run: npm run loopCommit
+        uses: actions/upload-artifact@v2
+        with:
+          name: temp-artifact-processed-9
+          path: src/database/temp/9.json
 
   job10-processAccounts:
     runs-on: ubuntu-latest
@@ -269,11 +280,12 @@ jobs:
         with:
           args: sh ./src/sh/setupProcess.sh
 
-      - name: Commit
+      - name: Create partial artifact
         if: ${{ always() }}
-        env:
-          DATABASE_PART: 10
-        run: npm run loopCommit
+        uses: actions/upload-artifact@v2
+        with:
+          name: temp-artifact-processed-10
+          path: src/database/temp/10.json
 
   job11-processAccounts:
     runs-on: ubuntu-latest
@@ -292,11 +304,12 @@ jobs:
         with:
           args: sh ./src/sh/setupProcess.sh
 
-      - name: Commit
+      - name: Create partial artifact
         if: ${{ always() }}
-        env:
-          DATABASE_PART: 11
-        run: npm run loopCommit
+        uses: actions/upload-artifact@v2
+        with:
+          name: temp-artifact-processed-11
+          path: src/database/temp/11.json
 
   job12-processAccounts:
     runs-on: ubuntu-latest
@@ -315,11 +328,12 @@ jobs:
         with:
           args: sh ./src/sh/setupProcess.sh
 
-      - name: Commit
+      - name: Create partial artifact
         if: ${{ always() }}
-        env:
-          DATABASE_PART: 12
-        run: npm run loopCommit
+        uses: actions/upload-artifact@v2
+        with:
+          name: temp-artifact-processed-12
+          path: src/database/temp/12.json
 
   job13-processAccounts:
     runs-on: ubuntu-latest
@@ -338,11 +352,12 @@ jobs:
         with:
           args: sh ./src/sh/setupProcess.sh
 
-      - name: Commit
+      - name: Create partial artifact
         if: ${{ always() }}
-        env:
-          DATABASE_PART: 13
-        run: npm run loopCommit
+        uses: actions/upload-artifact@v2
+        with:
+          name: temp-artifact-processed-13
+          path: src/database/temp/13.json
 
   job14-processAccounts:
     runs-on: ubuntu-latest
@@ -361,11 +376,12 @@ jobs:
         with:
           args: sh ./src/sh/setupProcess.sh
 
-      - name: Commit
+      - name: Create partial artifact
         if: ${{ always() }}
-        env:
-          DATABASE_PART: 14
-        run: npm run loopCommit
+        uses: actions/upload-artifact@v2
+        with:
+          name: temp-artifact-processed-14
+          path: src/database/temp/14.json
 
   mergeAccounts:
     if: ${{ always() }}
@@ -390,6 +406,9 @@ jobs:
       ]
     steps:
       - uses: actions/checkout@master
+
+      - name: Download all workflow run artifacts
+        uses: actions/download-artifact@v2
 
       - name: Merge Files & Cleanup
         run: |
