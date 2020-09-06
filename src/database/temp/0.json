@@ -1,6 +1,8 @@
 [
   {
     "email": "nelli.dyumaeva517@adres.pl",
-    "password": "9Pj2ww40EOi7r69"
+    "password": "9Pj2ww40EOi7r69",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
