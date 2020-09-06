@@ -17,6 +17,8 @@ const main = async () => {
       const index = mainDatabase.findIndex(
         (element) => element.email === partDatabase[j].email
       )
+      console.log(`Part: ${i}. PartUser ${j}`)
+      console.log(partDatabase)
       mainDatabase[index] = partDatabase[j]
     }
 
