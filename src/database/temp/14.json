@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "email": "",
+    "firewall": "error: TypeError: text is not iterable",
+    "imap": "error",
+    "smtp": "error"
+  }
+]
