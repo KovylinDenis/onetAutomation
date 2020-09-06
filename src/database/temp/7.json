@@ -1,6 +1,8 @@
 [
   {
     "email": "zara-parfirova190@onet.pl",
-    "password": "Sy3T1R5NwSsg"
+    "password": "Sy3T1R5NwSsg",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
