@@ -1,6 +1,8 @@
 [
   {
     "email": "klavdiya-gurchina217@onet.pl",
-    "password": "Ik6z4vgt9sS8Nran2"
+    "password": "Ik6z4vgt9sS8Nran2",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
