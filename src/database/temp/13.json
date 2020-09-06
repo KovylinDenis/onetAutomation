@@ -1,6 +1,8 @@
 [
   {
     "email": "nina-vesovaya182@onet.eu",
-    "password": "g3ohfJ1GVwhR"
+    "password": "g3ohfJ1GVwhR",
+    "imap": "on",
+    "firewall": "off"
   }
 ]
